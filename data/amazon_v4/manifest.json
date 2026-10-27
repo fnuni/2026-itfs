@@ -1,0 +1,93 @@
+{
+  "accessed": "2026-09-10",
+  "registry": "https://registry.opendata.aws/amazon-last-mile-challenges/",
+  "documentation": "https://github.com/MIT-CAVE/rc-cli/blob/main/templates/data_structures.md",
+  "dataset_doi": "10.1287/trsc.2022.1173",
+  "license": "CC BY-NC 4.0",
+  "raw_files": {
+    "new_route_data.json": {
+      "url": "https://amazon-last-mile-challenges.s3.us-west-2.amazonaws.com/almrrc2021/almrrc2021-data-training/model_apply_inputs/new_route_data.json",
+      "bytes": 178703,
+      "sha256": "5b6292cf03ed6abc1a8e37a61405c05e14751dc2820a0856f04fd14563f362a3"
+    },
+    "new_package_data.json": {
+      "url": "https://amazon-last-mile-challenges.s3.us-west-2.amazonaws.com/almrrc2021/almrrc2021-data-training/model_apply_inputs/new_package_data.json",
+      "bytes": 717877,
+      "sha256": "27fc132c7f9de5498301844e27e0d57eba7898bd2f2a247c51742d5b87400c95"
+    },
+    "new_travel_times.json": {
+      "url": "https://amazon-last-mile-challenges.s3.us-west-2.amazonaws.com/almrrc2021/almrrc2021-data-training/model_apply_inputs/new_travel_times.json",
+      "bytes": 4310705,
+      "sha256": "3a96c295d70f1eb372c89126e77e69f60d7bb1b9d38b2a913777d9341d560ab6"
+    },
+    "new_actual_sequences.json": {
+      "url": "https://amazon-last-mile-challenges.s3.us-west-2.amazonaws.com/almrrc2021/almrrc2021-data-training/model_score_inputs/new_actual_sequences.json",
+      "bytes": 21937,
+      "sha256": "174625ccf3e0aed722f1129feee558ee5672372a3757d475072f7e04c300c2db"
+    },
+    "License.txt": {
+      "url": "https://amazon-last-mile-challenges.s3.us-west-2.amazonaws.com/almrrc2021/License.txt",
+      "bytes": 19342,
+      "sha256": "48f99d700291c586c53ceed67e424e4513ef0a2ba1b61d1472d4113086d820c9"
+    }
+  },
+  "derived_file": {
+    "name": "instances.json",
+    "sha256": "f96a144e8ab9e8eb53dd59bf691c40929b4bbbb1e1bc5a74b63d9da26127b42c"
+  },
+  "selection": "First 8 route IDs in lexicographic order of the complete 13-route public apply sample; retain every dropoff.",
+  "translation": "Travel seconds / 60; sum package planned_service_time_seconds at each stop / 60; original depot; asymmetric matrix retained.",
+  "scenario": "K=2,P=3; historical order split into six contiguous equal-count chunks with depot returns; L = total split modal duration / (6 * 0.90). Fuzzy spreads are scenario assumptions, not estimated from observations.",
+  "membership_formula": "Travel TFN: left=.10+.05*((i+2*j)%3), right=.20+.10*((3*i+j)%4)+.10*(different nonmissing zones). Service TFN: left=.10+.025*(package_count%3), right=.20+.05*min(package_count,5).",
+  "omitted_constraints": "Package time windows, van volume capacity, executor identity, departure time and driver preferences are not modeled. No claim to reproduce historical dispatch.",
+  "routes": [
+    {
+      "id": "A1",
+      "source_route_id": "RouteID_15baae2d-bf07-4967-956a-173d4036613f",
+      "n": 192,
+      "L": 157.65154320987654
+    },
+    {
+      "id": "A2",
+      "source_route_id": "RouteID_2b8df66d-fcd4-438e-931c-3b84b36a5c6b",
+      "n": 132,
+      "L": 128.83919753086417
+    },
+    {
+      "id": "A3",
+      "source_route_id": "RouteID_3f166f0e-fd2e-47ab-96a0-6cbc99cc6eef",
+      "n": 165,
+      "L": 174.27993827160492
+    },
+    {
+      "id": "A4",
+      "source_route_id": "RouteID_5486294a-503f-4346-b8a9-862e988cbe7c",
+      "n": 150,
+      "L": 148.42746913580245
+    },
+    {
+      "id": "A5",
+      "source_route_id": "RouteID_693060a6-88bb-4324-9e9c-925d5240263c",
+      "n": 167,
+      "L": 132.33518518518517
+    },
+    {
+      "id": "A6",
+      "source_route_id": "RouteID_7f5d87f0-c39f-434f-bf3f-b159ef321909",
+      "n": 181,
+      "L": 168.62746913580247
+    },
+    {
+      "id": "A7",
+      "source_route_id": "RouteID_9475872b-287f-4c2c-8e29-887766a4e090",
+      "n": 186,
+      "L": 138.58055555555552
+    },
+    {
+      "id": "A8",
+      "source_route_id": "RouteID_a8f0009d-e50a-49c9-84d3-f9885ad14a54",
+      "n": 139,
+      "L": 145.12839506172838
+    }
+  ]
+}

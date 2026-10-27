@@ -1,0 +1,17 @@
+{
+  "raw_sha256_checks": 5,
+  "directed_insertions_checked": 4480,
+  "final_plans_checked": 288,
+  "OR_stage_plans_checked": 432,
+  "coverage_asserted": true,
+  "workload_and_FFF_asserted": true,
+  "feasibility_asserted": true,
+  "heterogeneous_shortcut_counterexample_verified": true,
+  "result_sha256": "3cbc1aa791cff525ab3926cf6016da83a7553e674024117018f753c0f108e67a",
+  "implementation_sha256": {
+    "src/external_instances_v4.py": "3b3c5f3c5dc7fa044bfe7312f268a877460a49634a2e3b7de41a76c91b62eca1",
+    "src/external_solver_v4.py": "655608ef4f37d6afa44e0a96dcae33e5c2693c1aa0b931a1cafdaef1cf049db5",
+    "experiments/prepare_amazon_v4.py": "4ec88b0c7904dd9b7b4c09b1ccae93308ba2f75ef99c77a29ae0f9f4ab56166b",
+    "experiments/run_external_v4.py": "4e7f8295269c0935933ce4e897322527ecfe06e0a0d5ed52b1cbaf0406e021c3"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "source_sha256": "c3c8bf33ac01da6c47cfac15d674e5606b63fd208d6c8244d2e3c3d6ba350b73",
+  "frozen_protocol_sha256": "f77e2158bc510e22ba6b227bdb3e23169d2fc8505bb7ebae3c539a37caa58816",
+  "validator_sha256": "524cb0694c14988fa6e09b02c92076eb213e347b836dddbc755d125c6d9dd2e1",
+  "audited_neutral_draws_per_input": 2,
+  "checks": [
+    {
+      "id": "A1-7",
+      "independently_enumerated_plans": 12658,
+      "independently_audited_routes": 13699,
+      "max_abs_error_pct": 3.774758283725532e-13,
+      "ci_selections": 120,
+      "robust_gaps": 216,
+      "smooth_regrets": 648,
+      "neutral_regrets": 432
+    },
+    {
+      "id": "A2-7",
+      "independently_enumerated_plans": 5983,
+      "independently_audited_routes": 13699,
+      "max_abs_error_pct": 2.433608869978343e-13,
+      "ci_selections": 120,
+      "robust_gaps": 216,
+      "smooth_regrets": 648,
+      "neutral_regrets": 432
+    },
+    {
+      "id": "A3-7",
+      "independently_enumerated_plans": 18459,
+      "independently_audited_routes": 13699,
+      "max_abs_error_pct": 3.1086244689504383e-13,
+      "ci_selections": 120,
+      "robust_gaps": 216,
+      "smooth_regrets": 648,
+      "neutral_regrets": 432
+    },
+    {
+      "id": "A4-7",
+      "independently_enumerated_plans": 328,
+      "independently_audited_routes": 13699,
+      "max_abs_error_pct": 4.884981308350689e-13,
+      "ci_selections": 120,
+      "robust_gaps": 216,
+      "smooth_regrets": 648,
+      "neutral_regrets": 432
+    },
+    {
+      "id": "A5-7",
+      "independently_enumerated_plans": 12634,
+      "independently_audited_routes": 13699,
+      "max_abs_error_pct": 3.979039320256561e-13,
+      "ci_selections": 120,
+      "robust_gaps": 216,
+      "smooth_regrets": 648,
+      "neutral_regrets": 432
+    },
+    {
+      "id": "A6-7",
+      "independently_enumerated_plans": 12905,
+      "independently_audited_routes": 13699,
+      "max_abs_error_pct": 3.3306690738754696e-13,
+      "ci_selections": 120,
+      "robust_gaps": 216,
+      "smooth_regrets": 648,
+      "neutral_regrets": 432
+    },
+    {
+      "id": "A7-7",
+      "independently_enumerated_plans": 7613,
+      "independently_audited_routes": 13699,
+      "max_abs_error_pct": 2.877698079828406e-13,
+      "ci_selections": 120,
+      "robust_gaps": 216,
+      "smooth_regrets": 648,
+      "neutral_regrets": 432
+    },
+    {
+      "id": "A8-7",
+      "independently_enumerated_plans": 14793,
+      "independently_audited_routes": 13699,
+      "max_abs_error_pct": 2.220446049250313e-13,
+      "ci_selections": 120,
+      "robust_gaps": 216,
+      "smooth_regrets": 648,
+      "neutral_regrets": 432
+    }
+  ],
+  "replay": "full deterministic replay identical for all eight inputs",
+  "limitations": "Numerical exhaustive validation at tolerance 1e-9; the neutral audit covers the first draws per input, the replay covers all."
+}

@@ -1,0 +1,1896 @@
+{
+  "protocol": {
+    "source": "20 paired experts, returned PDF forms",
+    "instances": "Ten canonical S10 seeds",
+    "ceiling": 0.3,
+    "endpoint": "q060",
+    "reference": "Context paired-coherent R1 median b, fixed across sessions",
+    "coherent_filter": "All five b/q endpoints numerical and monotone in both sessions for both context scenarios",
+    "exact": "Held-Karp shortest subset tours and exhaustive two-route partitions",
+    "R1_plan_tie_break": "First enumerated minimum-duration two-route partition"
+  },
+  "raw": [
+    {
+      "context": "s1+s3",
+      "seed": 10,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 133.17703405847314,
+        "consensus_R2": 133.17703405847314,
+        "joint_R1": 164.71109998410088,
+        "joint_R2": 161.37227455449835,
+        "joint_union": 164.71109998410088,
+        "cartesian_union": 175.0971275841009
+      },
+      "joint_R2_change_pct": -2.0270797960336706,
+      "R1_joint_plan_masks": [
+        677,
+        346
+      ],
+      "R1_joint_plan_tours": [
+        [
+          6,
+          3,
+          8,
+          10,
+          1
+        ],
+        [
+          5,
+          7,
+          4,
+          2,
+          9
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 161.37227455449835,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 6.3056027195510955
+    },
+    {
+      "context": "s1+s3",
+      "seed": 20,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 142.80810251490445,
+        "consensus_R2": 142.80810251490445,
+        "joint_R1": 174.70017320676473,
+        "joint_R2": 171.24684681659562,
+        "joint_union": 174.70017320676473,
+        "cartesian_union": 186.88921240676473
+      },
+      "joint_R2_change_pct": -1.9767160654626026,
+      "R1_joint_plan_masks": [
+        47,
+        976
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          6,
+          2,
+          4,
+          1
+        ],
+        [
+          8,
+          10,
+          5,
+          9,
+          7
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 171.24684681659562,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 6.977119127165254
+    },
+    {
+      "context": "s1+s3",
+      "seed": 30,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 137.64119699289432,
+        "consensus_R2": 137.64119699289432,
+        "joint_R1": 168.15400186606112,
+        "joint_R2": 164.8405034594096,
+        "joint_union": 168.15400186606112,
+        "cartesian_union": 180.02535706606113
+      },
+      "joint_R2_change_pct": -1.9705141536213944,
+      "R1_joint_plan_masks": [
+        207,
+        816
+      ],
+      "R1_joint_plan_tours": [
+        [
+          1,
+          7,
+          3,
+          2,
+          8,
+          4
+        ],
+        [
+          9,
+          6,
+          10,
+          5
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 164.8405034594096,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 7.059811285048001
+    },
+    {
+      "context": "s1+s3",
+      "seed": 40,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 135.69059788019223,
+        "consensus_R2": 135.69059788019223,
+        "joint_R1": 167.31960957267893,
+        "joint_R2": 163.950801273362,
+        "joint_union": 167.31960957267893,
+        "cartesian_union": 178.17536877267895
+      },
+      "joint_R2_change_pct": -2.0133971791594485,
+      "R1_joint_plan_masks": [
+        107,
+        916
+      ],
+      "R1_joint_plan_tours": [
+        [
+          4,
+          2,
+          7,
+          6,
+          1
+        ],
+        [
+          10,
+          9,
+          5,
+          3,
+          8
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 163.950801273362,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 6.488037611206954
+    },
+    {
+      "context": "s1+s3",
+      "seed": 50,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 141.7852950998947,
+        "consensus_R2": 141.7852950998947,
+        "joint_R1": 174.52823047936238,
+        "joint_R2": 171.0680040473783,
+        "joint_union": 174.52823047936238,
+        "cartesian_union": 186.50581867571685
+      },
+      "joint_R2_change_pct": -1.9826170370719653,
+      "R1_joint_plan_masks": [
+        339,
+        684
+      ],
+      "R1_joint_plan_tours": [
+        [
+          9,
+          1,
+          2,
+          5,
+          7
+        ],
+        [
+          4,
+          6,
+          8,
+          3,
+          10
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 171.0680040473783,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 6.862837125808596
+    },
+    {
+      "context": "s1+s3",
+      "seed": 60,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 148.86109737610403,
+        "consensus_R2": 148.86109737610403,
+        "joint_R1": 182.26847866388238,
+        "joint_R2": 178.5759958072853,
+        "joint_union": 182.26847866388238,
+        "cartesian_union": 194.5178470842814
+      },
+      "joint_R2_change_pct": -2.0258482891089002,
+      "R1_joint_plan_masks": [
+        421,
+        602
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          9,
+          6,
+          8,
+          1
+        ],
+        [
+          7,
+          2,
+          10,
+          4,
+          5
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 178.5759958072853,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 6.720508400680658
+    },
+    {
+      "context": "s1+s3",
+      "seed": 70,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 140.21528082068536,
+        "consensus_R2": 140.21528082068536,
+        "joint_R1": 169.36579966848427,
+        "joint_R2": 165.99248460712857,
+        "joint_union": 169.36579966848427,
+        "cartesian_union": 182.4559543457729
+      },
+      "joint_R2_change_pct": -1.9917333180362262,
+      "R1_joint_plan_masks": [
+        311,
+        712
+      ],
+      "R1_joint_plan_tours": [
+        [
+          6,
+          2,
+          9,
+          3,
+          1,
+          5
+        ],
+        [
+          7,
+          10,
+          8,
+          4
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 165.99248460712857,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 7.728924436285989
+    },
+    {
+      "context": "s1+s3",
+      "seed": 80,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 149.6459865375146,
+        "consensus_R2": 149.6459865375146,
+        "joint_R1": 189.03898178967532,
+        "joint_R2": 185.02580298493345,
+        "joint_union": 189.03898178967532,
+        "cartesian_union": 198.54292498967533
+      },
+      "joint_R2_change_pct": -2.1229371671113495,
+      "R1_joint_plan_masks": [
+        333,
+        690
+      ],
+      "R1_joint_plan_tours": [
+        [
+          4,
+          3,
+          1,
+          9,
+          7
+        ],
+        [
+          10,
+          8,
+          6,
+          5,
+          2
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 185.02580298493345,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 5.027504438515273
+    },
+    {
+      "context": "s1+s3",
+      "seed": 90,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 146.0981548054596,
+        "consensus_R2": 146.0981548054596,
+        "joint_R1": 180.94882603908312,
+        "joint_R2": 177.36783744810603,
+        "joint_union": 180.94882603908312,
+        "cartesian_union": 192.92477896378108
+      },
+      "joint_R2_change_pct": -1.9790062579370549,
+      "R1_joint_plan_masks": [
+        625,
+        398
+      ],
+      "R1_joint_plan_tours": [
+        [
+          5,
+          10,
+          7,
+          6,
+          1
+        ],
+        [
+          4,
+          8,
+          2,
+          9,
+          3
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 177.36783744810603,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 6.61841979682769
+    },
+    {
+      "context": "s1+s3",
+      "seed": 100,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 135.52861506447465,
+        "consensus_R2": 135.52861506447465,
+        "joint_R1": 166.633574682034,
+        "joint_R2": 163.30090173498317,
+        "joint_union": 166.633574682034,
+        "cartesian_union": 177.74246028203402
+      },
+      "joint_R2_change_pct": -2.0000008722192764,
+      "R1_joint_plan_masks": [
+        817,
+        206
+      ],
+      "R1_joint_plan_tours": [
+        [
+          9,
+          10,
+          1,
+          5,
+          6
+        ],
+        [
+          8,
+          2,
+          4,
+          7,
+          3
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 163.30090173498317,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 6.666655037076241
+    },
+    {
+      "context": "s1+s4",
+      "seed": 10,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        37.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 134.7209030260407,
+        "consensus_R2": 129.97856035319495,
+        "joint_R1": 173.19143535192288,
+        "joint_R2": 172.31970905179566,
+        "joint_union": 173.19143535192288,
+        "cartesian_union": 182.6761206976144
+      },
+      "joint_R2_change_pct": -0.5033310673567049,
+      "R1_joint_plan_masks": [
+        677,
+        346
+      ],
+      "R1_joint_plan_tours": [
+        [
+          6,
+          3,
+          8,
+          10,
+          1
+        ],
+        [
+          5,
+          7,
+          4,
+          2,
+          9
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 172.31970905179566,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 5.4764170794120215
+    },
+    {
+      "context": "s1+s4",
+      "seed": 20,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        37.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 144.61998672030984,
+        "consensus_R2": 139.51949287068126,
+        "joint_R1": 185.58292898858866,
+        "joint_R2": 184.0947530003794,
+        "joint_union": 185.58292898858866,
+        "cartesian_union": 195.78391668784582
+      },
+      "joint_R2_change_pct": -0.8018927151972943,
+      "R1_joint_plan_masks": [
+        47,
+        976
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          6,
+          2,
+          4,
+          1
+        ],
+        [
+          8,
+          10,
+          5,
+          9,
+          7
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 184.0947530003794,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 5.496727395591661
+    },
+    {
+      "context": "s1+s4",
+      "seed": 30,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        37.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 139.40585790100243,
+        "consensus_R2": 134.4881223051617,
+        "joint_R1": 178.8527666960013,
+        "joint_R2": 177.35355353508527,
+        "joint_union": 178.8527666960013,
+        "cartesian_union": 188.68823788768276
+      },
+      "joint_R2_change_pct": -0.83823873044373,
+      "R1_joint_plan_masks": [
+        207,
+        816
+      ],
+      "R1_joint_plan_tours": [
+        [
+          1,
+          7,
+          3,
+          2,
+          8,
+          4
+        ],
+        [
+          9,
+          6,
+          10,
+          5
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 177.35355353508527,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 5.499199913635633
+    },
+    {
+      "context": "s1+s4",
+      "seed": 40,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        37.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 137.3042918153274,
+        "consensus_R2": 132.46848902952394,
+        "joint_R1": 176.42553342809907,
+        "joint_R2": 175.3933582679566,
+        "joint_union": 176.42553342809907,
+        "cartesian_union": 186.09713899970598
+      },
+      "joint_R2_change_pct": -0.5850486265147947,
+      "R1_joint_plan_masks": [
+        107,
+        916
+      ],
+      "R1_joint_plan_tours": [
+        [
+          4,
+          2,
+          7,
+          6,
+          1
+        ],
+        [
+          10,
+          9,
+          5,
+          3,
+          8
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 175.3933582679566,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 5.4819760970418185
+    },
+    {
+      "context": "s1+s4",
+      "seed": 50,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        37.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 143.41264514854336,
+        "consensus_R2": 138.36535330651532,
+        "joint_R1": 184.40004432139045,
+        "joint_R2": 183.52969962287796,
+        "joint_union": 184.40004432139045,
+        "cartesian_union": 194.49462800544657
+      },
+      "joint_R2_change_pct": -0.4719872501741773,
+      "R1_joint_plan_masks": [
+        595,
+        428
+      ],
+      "R1_joint_plan_tours": [
+        [
+          10,
+          7,
+          5,
+          2,
+          1
+        ],
+        [
+          9,
+          3,
+          8,
+          6,
+          4
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 183.52969962287796,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 5.474284846950628
+    },
+    {
+      "context": "s1+s4",
+      "seed": 60,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        37.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 150.80236405718512,
+        "consensus_R2": 145.4805730281862,
+        "joint_R1": 193.40411964249978,
+        "joint_R2": 191.66675910393116,
+        "joint_union": 193.40411964249978,
+        "cartesian_union": 204.0477017004976
+      },
+      "joint_R2_change_pct": -0.8983058591409909,
+      "R1_joint_plan_masks": [
+        421,
+        602
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          9,
+          6,
+          8,
+          1
+        ],
+        [
+          7,
+          2,
+          10,
+          4,
+          5
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 191.66675910393116,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 5.503286112866723
+    },
+    {
+      "context": "s1+s4",
+      "seed": 70,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        37.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 142.18108832338805,
+        "consensus_R2": 137.15504405501403,
+        "joint_R1": 182.05419354956535,
+        "joint_R2": 179.93184689902048,
+        "joint_union": 182.05419354956535,
+        "cartesian_union": 192.10628208631346
+      },
+      "joint_R2_change_pct": -1.1657774035109258,
+      "R1_joint_plan_masks": [
+        311,
+        712
+      ],
+      "R1_joint_plan_tours": [
+        [
+          6,
+          2,
+          9,
+          3,
+          1,
+          5
+        ],
+        [
+          7,
+          10,
+          8,
+          4
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 179.93184689902048,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 5.521481456021138
+    },
+    {
+      "context": "s1+s4",
+      "seed": 80,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        37.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 151.05873485102813,
+        "consensus_R2": 145.7612393976376,
+        "joint_R1": 195.84586002751314,
+        "joint_R2": 195.0434728443929,
+        "joint_union": 195.84586002751314,
+        "cartesian_union": 205.47823489237803
+      },
+      "joint_R2_change_pct": -0.40970341829411616,
+      "R1_joint_plan_masks": [
+        333,
+        690
+      ],
+      "R1_joint_plan_tours": [
+        [
+          4,
+          3,
+          1,
+          9,
+          7
+        ],
+        [
+          10,
+          8,
+          6,
+          5,
+          2
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 195.0434728443929,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 4.918344898131477
+    },
+    {
+      "context": "s1+s4",
+      "seed": 90,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        37.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 148.01741227032446,
+        "consensus_R2": 142.79303394972612,
+        "joint_R1": 190.03765312694335,
+        "joint_R2": 189.68063263455142,
+        "joint_union": 190.03765312694335,
+        "cartesian_union": 200.40412543945675
+      },
+      "joint_R2_change_pct": -0.18786829163452978,
+      "R1_joint_plan_masks": [
+        613,
+        410
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          10,
+          7,
+          6,
+          1
+        ],
+        [
+          5,
+          9,
+          2,
+          8,
+          4
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 189.68063263455142,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 5.454957026641805
+    },
+    {
+      "context": "s1+s4",
+      "seed": 100,
+      "n": 19,
+      "reference_b_R1": [
+        23.0,
+        37.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 137.1799358969071,
+        "consensus_R2": 132.3460621930995,
+        "joint_R1": 176.18119696090528,
+        "joint_R2": 175.01026763768587,
+        "joint_union": 176.18119696090528,
+        "cartesian_union": 185.8489443685205
+      },
+      "joint_R2_change_pct": -0.6646165103982304,
+      "R1_joint_plan_masks": [
+        817,
+        206
+      ],
+      "R1_joint_plan_tours": [
+        [
+          9,
+          10,
+          1,
+          5,
+          6
+        ],
+        [
+          8,
+          2,
+          4,
+          7,
+          3
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 175.01026763768587,
+      "R1_joint_plan_R2_excess_minutes": 0.0,
+      "R1_joint_plan_R2_excess_pct": 0.0,
+      "R1_joint_plan_R2_joint_protected_count": 19,
+      "union_over_R1_joint_pct": 0.0,
+      "cartesian_over_joint_union_pct": 5.487388878258392
+    },
+    {
+      "context": "s2+s3",
+      "seed": 10,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 132.78879854340306,
+        "consensus_R2": 127.91877835475853,
+        "joint_R1": 149.67237239798132,
+        "joint_R2": 153.24413913662588,
+        "joint_union": 153.24413913662588,
+        "cartesian_union": 159.41241277527044
+      },
+      "joint_R2_change_pct": 2.386390140958783,
+      "R1_joint_plan_masks": [
+        677,
+        346
+      ],
+      "R1_joint_plan_tours": [
+        [
+          6,
+          3,
+          8,
+          10,
+          1
+        ],
+        [
+          5,
+          7,
+          4,
+          2,
+          9
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 153.24413913662588,
+      "R1_joint_plan_R2_excess_minutes": 3.5717667386445555,
+      "R1_joint_plan_R2_excess_pct": 2.3863901409587926,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 2.386390140958783,
+      "cartesian_over_joint_union_pct": 4.025128578095383
+    },
+    {
+      "context": "s2+s3",
+      "seed": 20,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 142.4065529346522,
+        "consensus_R2": 137.18866689633177,
+        "joint_R1": 160.230837287934,
+        "joint_R2": 163.92509342625448,
+        "joint_union": 163.92509342625448,
+        "cartesian_union": 170.66660936457492
+      },
+      "joint_R2_change_pct": 2.3055837445833838,
+      "R1_joint_plan_masks": [
+        47,
+        976
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          6,
+          2,
+          4,
+          1
+        ],
+        [
+          8,
+          10,
+          5,
+          9,
+          7
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 163.92509342625448,
+      "R1_joint_plan_R2_excess_minutes": 3.694256138320469,
+      "R1_joint_plan_R2_excess_pct": 2.305583744583391,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 2.3055837445833838,
+      "cartesian_over_joint_union_pct": 4.112558850761472
+    },
+    {
+      "context": "s2+s3",
+      "seed": 30,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 137.25590648049297,
+        "consensus_R2": 132.22731436640063,
+        "joint_R1": 154.4024361368623,
+        "joint_R2": 157.94710885095463,
+        "joint_union": 157.94710885095463,
+        "cartesian_union": 164.459620365047
+      },
+      "joint_R2_change_pct": 2.2957362608905685,
+      "R1_joint_plan_masks": [
+        207,
+        816
+      ],
+      "R1_joint_plan_tours": [
+        [
+          1,
+          7,
+          3,
+          2,
+          8,
+          4
+        ],
+        [
+          9,
+          6,
+          10,
+          5
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 157.94710885095463,
+      "R1_joint_plan_R2_excess_minutes": 3.544672714092343,
+      "R1_joint_plan_R2_excess_pct": 2.2957362608905636,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 2.2957362608905685,
+      "cartesian_over_joint_union_pct": 4.123222996273923
+    },
+    {
+      "context": "s2+s3",
+      "seed": 40,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 135.29887598492283,
+        "consensus_R2": 130.3380646484442,
+        "joint_R1": 152.42818153083732,
+        "joint_R2": 156.03202296731595,
+        "joint_union": 156.03202296731595,
+        "cartesian_union": 162.34980420379458
+      },
+      "joint_R2_change_pct": 2.3642881521548142,
+      "R1_joint_plan_masks": [
+        107,
+        916
+      ],
+      "R1_joint_plan_tours": [
+        [
+          4,
+          2,
+          7,
+          6,
+          1
+        ],
+        [
+          10,
+          9,
+          5,
+          3,
+          8
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 156.03202296731595,
+      "R1_joint_plan_R2_excess_minutes": 3.603841436478632,
+      "R1_joint_plan_R2_excess_pct": 2.3642881521548222,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 2.3642881521548142,
+      "cartesian_over_joint_union_pct": 4.049028600880233
+    },
+    {
+      "context": "s2+s3",
+      "seed": 50,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 141.37042501769787,
+        "consensus_R2": 136.18516681148682,
+        "joint_R1": 159.374550942542,
+        "joint_R2": 163.19135569875303,
+        "joint_union": 163.19135569875303,
+        "cartesian_union": 169.74506735496405
+      },
+      "joint_R2_change_pct": 2.394864634057603,
+      "R1_joint_plan_masks": [
+        595,
+        428
+      ],
+      "R1_joint_plan_tours": [
+        [
+          10,
+          7,
+          5,
+          2,
+          1
+        ],
+        [
+          9,
+          3,
+          8,
+          6,
+          4
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 163.19135569875303,
+      "R1_joint_plan_R2_excess_minutes": 3.8168047562110416,
+      "R1_joint_plan_R2_excess_pct": 2.3948646340575936,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 2.394864634057603,
+      "cartesian_over_joint_union_pct": 4.015967407188525
+    },
+    {
+      "context": "s2+s3",
+      "seed": 60,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 148.44749236016133,
+        "consensus_R2": 143.00989741348872,
+        "joint_R1": 166.93301454685192,
+        "joint_R2": 170.73818069352455,
+        "joint_union": 170.73818069352455,
+        "cartesian_union": 177.80820444019722
+      },
+      "joint_R2_change_pct": 2.279456916896838,
+      "R1_joint_plan_masks": [
+        421,
+        602
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          9,
+          6,
+          8,
+          1
+        ],
+        [
+          7,
+          2,
+          10,
+          4,
+          5
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 170.73818069352455,
+      "R1_joint_plan_R2_excess_minutes": 3.805166146672633,
+      "R1_joint_plan_R2_excess_pct": 2.2794569168968453,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 2.279456916896838,
+      "cartesian_over_joint_union_pct": 4.140856906144141
+    },
+    {
+      "context": "s2+s3",
+      "seed": 70,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 139.83865913014534,
+        "consensus_R2": 134.720674177177,
+        "joint_R1": 157.0044681420187,
+        "joint_R2": 160.46938769498706,
+        "joint_union": 160.46938769498706,
+        "cartesian_union": 167.2404380479554
+      },
+      "joint_R2_change_pct": 2.2068923222198666,
+      "R1_joint_plan_masks": [
+        311,
+        712
+      ],
+      "R1_joint_plan_tours": [
+        [
+          6,
+          2,
+          9,
+          3,
+          1,
+          5
+        ],
+        [
+          7,
+          10,
+          8,
+          4
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 160.46938769498706,
+      "R1_joint_plan_R2_excess_minutes": 3.464919552968354,
+      "R1_joint_plan_R2_excess_pct": 2.2068923222198706,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 2.2068923222198666,
+      "cartesian_over_joint_union_pct": 4.219527755560737
+    },
+    {
+      "context": "s2+s3",
+      "seed": 80,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 149.17933783928882,
+        "consensus_R2": 143.69817691561144,
+        "joint_R1": 168.72799573399823,
+        "joint_R2": 173.0211637576756,
+        "joint_union": 173.0211637576756,
+        "cartesian_union": 179.690317581353
+      },
+      "joint_R2_change_pct": 2.5444313523676376,
+      "R1_joint_plan_masks": [
+        333,
+        690
+      ],
+      "R1_joint_plan_tours": [
+        [
+          4,
+          3,
+          1,
+          9,
+          7
+        ],
+        [
+          10,
+          8,
+          6,
+          5,
+          2
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 173.0211637576756,
+      "R1_joint_plan_R2_excess_minutes": 4.293168023677367,
+      "R1_joint_plan_R2_excess_pct": 2.5444313523676296,
+      "R1_joint_plan_R2_joint_protected_count": 16,
+      "union_over_R1_joint_pct": 2.5444313523676376,
+      "cartesian_over_joint_union_pct": 3.854530670605061
+    },
+    {
+      "context": "s2+s3",
+      "seed": 90,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 145.69355029300786,
+        "consensus_R2": 140.35726772845203,
+        "joint_R1": 164.39351337392546,
+        "joint_R2": 168.45667411179403,
+        "joint_union": 168.45667411179403,
+        "cartesian_union": 175.0822035496626
+      },
+      "joint_R2_change_pct": 2.4716064852428943,
+      "R1_joint_plan_masks": [
+        613,
+        410
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          10,
+          7,
+          6,
+          1
+        ],
+        [
+          5,
+          9,
+          2,
+          8,
+          4
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 168.45667411179403,
+      "R1_joint_plan_R2_excess_minutes": 4.0631607378685715,
+      "R1_joint_plan_R2_excess_pct": 2.4716064852428854,
+      "R1_joint_plan_R2_joint_protected_count": 16,
+      "union_over_R1_joint_pct": 2.4716064852428943,
+      "cartesian_over_joint_union_pct": 3.93307624812278
+    },
+    {
+      "context": "s2+s3",
+      "seed": 100,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        10.0
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 135.14109495435247,
+        "consensus_R2": 130.1872992412283,
+        "joint_R1": 152.17905640684913,
+        "joint_R2": 155.74424141997332,
+        "joint_union": 155.74424141997332,
+        "cartesian_union": 162.08664783309746
+      },
+      "joint_R2_change_pct": 2.342756682360214,
+      "R1_joint_plan_masks": [
+        817,
+        206
+      ],
+      "R1_joint_plan_tours": [
+        [
+          9,
+          10,
+          1,
+          5,
+          6
+        ],
+        [
+          8,
+          2,
+          4,
+          7,
+          3
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 155.74424141997332,
+      "R1_joint_plan_R2_excess_minutes": 3.565185013124193,
+      "R1_joint_plan_R2_excess_pct": 2.3427566823602244,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 2.342756682360214,
+      "cartesian_over_joint_union_pct": 4.072321618634667
+    },
+    {
+      "context": "s2+s4",
+      "seed": 10,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        37.5
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 131.69531701408079,
+        "consensus_R2": 128.17842904475853,
+        "joint_R1": 155.84064603662586,
+        "joint_R2": 162.87442197527045,
+        "joint_union": 162.87442197527045,
+        "cartesian_union": 166.3430237314921
+      },
+      "joint_R2_change_pct": 4.51344120903574,
+      "R1_joint_plan_masks": [
+        677,
+        346
+      ],
+      "R1_joint_plan_tours": [
+        [
+          6,
+          3,
+          8,
+          10,
+          1
+        ],
+        [
+          5,
+          7,
+          4,
+          2,
+          9
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 162.87442197527045,
+      "R1_joint_plan_R2_excess_minutes": 7.033775938644595,
+      "R1_joint_plan_R2_excess_pct": 4.513441209035741,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 4.51344120903574,
+      "cartesian_over_joint_union_pct": 2.1296172315799833
+    },
+    {
+      "context": "s2+s4",
+      "seed": 20,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        37.5
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 141.37202747882532,
+        "consensus_R2": 137.49339287633174,
+        "joint_R1": 166.97235322625448,
+        "joint_R2": 174.7296224312416,
+        "joint_union": 174.7296224312416,
+        "cartesian_union": 178.79263549790826
+      },
+      "joint_R2_change_pct": 4.6458404970047384,
+      "R1_joint_plan_masks": [
+        47,
+        976
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          6,
+          2,
+          4,
+          1
+        ],
+        [
+          8,
+          10,
+          5,
+          9,
+          7
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 174.7296224312416,
+      "R1_joint_plan_R2_excess_minutes": 7.757269204987125,
+      "R1_joint_plan_R2_excess_pct": 4.645840497004736,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 4.6458404970047384,
+      "cartesian_over_joint_union_pct": 2.3253143972571166
+    },
+    {
+      "context": "s2+s4",
+      "seed": 30,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        37.5
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 136.27499380344682,
+        "consensus_R2": 132.52409824640063,
+        "joint_R1": 160.91494765095464,
+        "joint_R2": 168.41673876504697,
+        "joint_union": 168.41673876504697,
+        "cartesian_union": 172.37385716504699
+      },
+      "joint_R2_change_pct": 4.661960385659558,
+      "R1_joint_plan_masks": [
+        207,
+        816
+      ],
+      "R1_joint_plan_tours": [
+        [
+          1,
+          7,
+          3,
+          2,
+          8,
+          4
+        ],
+        [
+          9,
+          6,
+          10,
+          5
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 168.41673876504697,
+      "R1_joint_plan_R2_excess_minutes": 7.5017911140923275,
+      "R1_joint_plan_R2_excess_pct": 4.661960385659562,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 4.661960385659558,
+      "cartesian_over_joint_union_pct": 2.349599231653854
+    },
+    {
+      "context": "s2+s4",
+      "seed": 40,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        37.5
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 134.22067254668352,
+        "consensus_R2": 130.6094586284442,
+        "joint_R1": 158.74596276731597,
+        "joint_R2": 165.96839060379457,
+        "joint_union": 165.96839060379457,
+        "cartesian_union": 169.58697700379457
+      },
+      "joint_R2_change_pct": 4.54967654646119,
+      "R1_joint_plan_masks": [
+        107,
+        916
+      ],
+      "R1_joint_plan_tours": [
+        [
+          4,
+          2,
+          7,
+          6,
+          1
+        ],
+        [
+          10,
+          9,
+          5,
+          3,
+          8
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 165.96839060379457,
+      "R1_joint_plan_R2_excess_minutes": 7.222427836478602,
+      "R1_joint_plan_R2_excess_pct": 4.549676546461199,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 4.54967654646119,
+      "cartesian_over_joint_union_pct": 2.1802864912020548
+    },
+    {
+      "context": "s2+s4",
+      "seed": 50,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        37.5
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 140.19186447959234,
+        "consensus_R2": 136.45885750148682,
+        "joint_R1": 165.92826259875304,
+        "joint_R2": 173.39427655496405,
+        "joint_union": 173.39427655496405,
+        "cartesian_union": 177.04348575496405
+      },
+      "joint_R2_change_pct": 4.499543260008276,
+      "R1_joint_plan_masks": [
+        595,
+        428
+      ],
+      "R1_joint_plan_tours": [
+        [
+          10,
+          7,
+          5,
+          2,
+          1
+        ],
+        [
+          9,
+          3,
+          8,
+          6,
+          4
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 173.39427655496405,
+      "R1_joint_plan_R2_excess_minutes": 7.466013956211015,
+      "R1_joint_plan_R2_excess_pct": 4.499543260008269,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 4.499543260008276,
+      "cartesian_over_joint_union_pct": 2.1045730415693686
+    },
+    {
+      "context": "s2+s4",
+      "seed": 60,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        37.5
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 147.41553798015838,
+        "consensus_R2": 143.3363831734887,
+        "joint_R1": 174.00303829352458,
+        "joint_R2": 182.16134790686388,
+        "joint_union": 182.16134790686388,
+        "cartesian_union": 186.51449137353055
+      },
+      "joint_R2_change_pct": 4.688601816008009,
+      "R1_joint_plan_masks": [
+        421,
+        602
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          9,
+          6,
+          8,
+          1
+        ],
+        [
+          7,
+          2,
+          10,
+          4,
+          5
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 182.16134790686388,
+      "R1_joint_plan_R2_excess_minutes": 8.158309613339298,
+      "R1_joint_plan_R2_excess_pct": 4.688601816008005,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 4.688601816008009,
+      "cartesian_over_joint_union_pct": 2.3897185197006454
+    },
+    {
+      "context": "s2+s4",
+      "seed": 70,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        37.5
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 138.98783423366115,
+        "consensus_R2": 135.05128725717697,
+        "joint_R1": 163.77551849498707,
+        "joint_R2": 171.6486124479554,
+        "joint_union": 171.6486124479554,
+        "cartesian_union": 176.0567868479554
+      },
+      "joint_R2_change_pct": 4.8072471547139894,
+      "R1_joint_plan_masks": [
+        311,
+        712
+      ],
+      "R1_joint_plan_tours": [
+        [
+          6,
+          2,
+          9,
+          3,
+          1,
+          5
+        ],
+        [
+          7,
+          10,
+          8,
+          4
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 171.6486124479554,
+      "R1_joint_plan_R2_excess_minutes": 7.873093952968333,
+      "R1_joint_plan_R2_excess_pct": 4.807247154713979,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 4.8072471547139894,
+      "cartesian_over_joint_union_pct": 2.568138674197895
+    },
+    {
+      "context": "s2+s4",
+      "seed": 80,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        37.5
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 147.66635004078344,
+        "consensus_R2": 143.93577549561144,
+        "joint_R1": 175.39714955767562,
+        "joint_R2": 182.85829864801968,
+        "joint_union": 182.85829864801968,
+        "cartesian_union": 186.02627971468632
+      },
+      "joint_R2_change_pct": 4.253859945363958,
+      "R1_joint_plan_masks": [
+        333,
+        690
+      ],
+      "R1_joint_plan_tours": [
+        [
+          4,
+          3,
+          1,
+          9,
+          7
+        ],
+        [
+          10,
+          8,
+          6,
+          5,
+          2
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 182.85829864801968,
+      "R1_joint_plan_R2_excess_minutes": 7.461149090344065,
+      "R1_joint_plan_R2_excess_pct": 4.25385994536395,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 4.253859945363958,
+      "cartesian_over_joint_union_pct": 1.7324786953009097
+    },
+    {
+      "context": "s2+s4",
+      "seed": 90,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        37.5
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 144.69312742906328,
+        "consensus_R2": 140.680051938452,
+        "joint_R1": 171.01904281179404,
+        "joint_R2": 178.78719304700962,
+        "joint_union": 178.78719304700962,
+        "cartesian_union": 183.0909825136763
+      },
+      "joint_R2_change_pct": 4.542272081223375,
+      "R1_joint_plan_masks": [
+        613,
+        410
+      ],
+      "R1_joint_plan_tours": [
+        [
+          3,
+          10,
+          7,
+          6,
+          1
+        ],
+        [
+          5,
+          9,
+          2,
+          8,
+          4
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 178.78719304700962,
+      "R1_joint_plan_R2_excess_minutes": 7.768150235215586,
+      "R1_joint_plan_R2_excess_pct": 4.542272081223383,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 4.542272081223375,
+      "cartesian_over_joint_union_pct": 2.407213510832995
+    },
+    {
+      "context": "s2+s4",
+      "seed": 100,
+      "n": 18,
+      "reference_b_R1": [
+        21.5,
+        37.5
+      ],
+      "minimum_shift_minutes": {
+        "consensus_R1": 134.0990948211237,
+        "consensus_R2": 130.4650213812283,
+        "joint_R1": 158.5214628199733,
+        "joint_R2": 165.78960969976413,
+        "joint_union": 165.78960969976413,
+        "cartesian_union": 169.4925715664308
+      },
+      "joint_R2_change_pct": 4.584960768400803,
+      "R1_joint_plan_masks": [
+        817,
+        206
+      ],
+      "R1_joint_plan_tours": [
+        [
+          9,
+          10,
+          1,
+          5,
+          6
+        ],
+        [
+          8,
+          2,
+          4,
+          7,
+          3
+        ]
+      ],
+      "R1_joint_plan_R2_duration": 165.78960969976413,
+      "R1_joint_plan_R2_excess_minutes": 7.268146879790834,
+      "R1_joint_plan_R2_excess_pct": 4.584960768400799,
+      "R1_joint_plan_R2_joint_protected_count": 17,
+      "union_over_R1_joint_pct": 4.584960768400803,
+      "cartesian_over_joint_union_pct": 2.2335307220835654
+    }
+  ],
+  "coverage": [
+    {
+      "context": "s1+s3",
+      "session": "R1",
+      "n": 19,
+      "target_marginal": 0.9,
+      "thresholds": [
+        38.0,
+        15.0
+      ],
+      "marginal_counts": [
+        18,
+        18
+      ],
+      "joint_count": 17
+    },
+    {
+      "context": "s1+s3",
+      "session": "R2",
+      "n": 19,
+      "target_marginal": 0.9,
+      "thresholds": [
+        37.0,
+        16.0
+      ],
+      "marginal_counts": [
+        18,
+        19
+      ],
+      "joint_count": 18
+    },
+    {
+      "context": "s1+s4",
+      "session": "R1",
+      "n": 19,
+      "target_marginal": 0.9,
+      "thresholds": [
+        38.0,
+        66.0
+      ],
+      "marginal_counts": [
+        18,
+        18
+      ],
+      "joint_count": 17
+    },
+    {
+      "context": "s1+s4",
+      "session": "R2",
+      "n": 19,
+      "target_marginal": 0.9,
+      "thresholds": [
+        37.0,
+        65.0
+      ],
+      "marginal_counts": [
+        18,
+        19
+      ],
+      "joint_count": 18
+    },
+    {
+      "context": "s2+s3",
+      "session": "R1",
+      "n": 18,
+      "target_marginal": 0.9,
+      "thresholds": [
+        32.0,
+        15.0
+      ],
+      "marginal_counts": [
+        18,
+        17
+      ],
+      "joint_count": 17
+    },
+    {
+      "context": "s2+s3",
+      "session": "R2",
+      "n": 18,
+      "target_marginal": 0.9,
+      "thresholds": [
+        32.0,
+        16.0
+      ],
+      "marginal_counts": [
+        17,
+        18
+      ],
+      "joint_count": 17
+    },
+    {
+      "context": "s2+s4",
+      "session": "R1",
+      "n": 18,
+      "target_marginal": 0.9,
+      "thresholds": [
+        31.0,
+        65.0
+      ],
+      "marginal_counts": [
+        17,
+        17
+      ],
+      "joint_count": 16
+    },
+    {
+      "context": "s2+s4",
+      "session": "R2",
+      "n": 18,
+      "target_marginal": 0.9,
+      "thresholds": [
+        31.0,
+        65.0
+      ],
+      "marginal_counts": [
+        17,
+        18
+      ],
+      "joint_count": 17
+    }
+  ]
+}

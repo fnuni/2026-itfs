@@ -1,0 +1,36 @@
+{
+  "name": "Endpoint information add-on v11",
+  "frozen_at_utc": "2026-10-16T08:12:42.446689+00:00",
+  "freeze_scope": "These extension choices were recorded before executing the additional stress evaluations, after inspecting the original three-completion experiment; this is not preregistration.",
+  "original_record_sha256": "46ff4462331623575e665e1d93eab11cb305890eb4236623ef070414fbf8dd16",
+  "source_sha256": "f96a144e8ab9e8eb53dd59bf691c40929b4bbbb1e1bc5a74b63d9da26127b42c",
+  "selection": "All eight original inputs, both original grids, both policies, both weight profiles and all three alpha values; no outcome-based exclusions.",
+  "methods": [
+    "triangular",
+    "minimax",
+    "sweep",
+    "piecewise_linear"
+  ],
+  "original_methods": "Preserve all 576 original selected plans and their original smooth-test values.",
+  "piecewise_linear": "Optimize the single completion that linearly interpolates q_e between the endpoints available on the selected grid, using the original domain, workload scale, cap, profiles and preferences.",
+  "smooth_powers": [
+    0.45,
+    1.0,
+    2.2
+  ],
+  "stress_powers": [
+    0.1,
+    10.0
+  ],
+  "stress_choice": "Fixed reciprocal powers, symmetric on a log scale around one; selected before viewing their outcomes, without tuning.",
+  "completion_formula": "On each adjacent full-grid endpoint interval use q_lo-(q_lo-q_hi)*z**[p*(1+0.12*(leg_id%3-1))]. All methods are evaluated under the identical completion and same policy-specific oracle.",
+  "aggregation": "Keep original smooth-three means/maxima separate from each additional stress power. Do not average all five as an empirical distribution.",
+  "least_favourable": "For each grid separately, the common least-favourable endpoint completion gives J=upper_J; report it as a deterministic robust certificate, not an independent empirical win.",
+  "primary_outputs": "Main 16-row method table for original smooth family; supplementary weights/routes with PL and separate stress table; matched grid changes and robust gaps.",
+  "limitations": [
+    "Constructed memberships and completion families are not calibrated operational uncertainty.",
+    "A smooth completion family may favour point interpolation.",
+    "Repeated settings are descriptive and not independent replications.",
+    "No universal superiority of point interpolation or minimax is claimed."
+  ]
+}

@@ -1,0 +1,27 @@
+\begin{table}[t]
+\centering
+\caption{Eight complete Amazon route scaffolds (132--192 stops); median metrics over 24 runs per $\alpha$, with 4 s per method including preprocessing and seeding. OR-sweep uses four fixed ceilings; full evaluates every insertion position; modal is a restricted-position ablation.}
+\label{tab:external-v4}
+\footnotesize
+\setlength{\tabcolsep}{2.7pt}
+\begin{tabular}{clcccc}
+\toprule
+$\alpha$ & Method & Feas. & $J_\alpha$ & FFF & $W/W_0$ \\
+\midrule
+0.1 & OR-sweep & 24/24 & 0.382 & 0.317 & 0.970 \\
+ & CC-modal & 24/24 & 0.359 & 0.289 & 0.990 \\
+ & CC-full & 24/24 & 0.389 & 0.321 & 1.001 \\
+ & OR+CC & 24/24 & 0.368 & 0.300 & 0.989 \\
+\addlinespace[2pt]
+0.3 & OR-sweep & 24/24 & 0.508 & 0.312 & 0.966 \\
+ & CC-modal & 24/24 & 0.487 & 0.276 & 0.979 \\
+ & CC-full & 24/24 & 0.513 & 0.306 & 0.994 \\
+ & OR+CC & 24/24 & 0.498 & 0.291 & 0.983 \\
+\addlinespace[2pt]
+0.7 & OR-sweep & 24/24 & 0.761 & 0.423 & 0.902 \\
+ & CC-modal & 24/24 & 0.749 & 0.446 & 0.881 \\
+ & CC-full & 24/24 & 0.761 & 0.438 & 0.897 \\
+ & OR+CC & 24/24 & 0.753 & 0.427 & 0.892 \\
+\bottomrule
+\end{tabular}
+\end{table}

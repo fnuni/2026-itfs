@@ -1,0 +1,38 @@
+{
+  "created_client_date": "2026-09-10",
+  "selection": "8 first lexicographic route IDs; all dropoffs",
+  "alphas": [
+    0.1,
+    0.3,
+    0.7
+  ],
+  "seeds": [
+    10,
+    20,
+    30
+  ],
+  "ceilings": [
+    0.25,
+    0.4,
+    0.6,
+    0.8
+  ],
+  "methods": [
+    "OR-sweep",
+    "CC-all",
+    "CC-modal",
+    "OR+CC"
+  ],
+  "seconds_per_method": 4.0,
+  "hybrid_OR_fraction": 0.5,
+  "workers": 2,
+  "python": "3.13.16 (main, Sep  1 2026, 15:40:24) [GCC 13.3.0]",
+  "platform": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+  "cpu_count": 2,
+  "all_position_repair": "Exact lower/modal/upper directed insertion deltas; symmetric modal 2-opt disabled",
+  "objective": "Feasible-first, J=alpha*total_modal_workload/historical_split_workload+(1-alpha)*FFF",
+  "time_includes": "External instance TFN creation, OR model creation/search, OR seed generation, LNS initialization/search. Final independent verification is outside all allowances.",
+  "OR_seed_note": "Default deterministic Routing engine; CC-LNS random seeds 10,20,30. These are three time-limited repetitions, not three independent new operational datasets.",
+  "data_sha256": "f96a144e8ab9e8eb53dd59bf691c40929b4bbbb1e1bc5a74b63d9da26127b42c",
+  "caveats": "Operational modal scaffold; constructed multi-shift slots, horizon and heterogeneous TFNs; no measured overtime frequencies or field deployment."
+}

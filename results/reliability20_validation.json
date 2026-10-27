@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "forms": 40,
+  "paired_experts": 20,
+  "independent_ANOVA_and_LoA_items": 60,
+  "independent_complement_partition_cases": 40,
+  "partitions_per_case": 512,
+  "public_numeric_schema": "passed"
+}

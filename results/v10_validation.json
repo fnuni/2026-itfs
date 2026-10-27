@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "independent_direct_enumeration": [
+    {
+      "id": "A1",
+      "unfiltered_feasible_labelled_plans": 19110,
+      "status": "passed"
+    },
+    {
+      "id": "A2",
+      "unfiltered_feasible_labelled_plans": 15975,
+      "status": "passed"
+    },
+    {
+      "id": "A3",
+      "unfiltered_feasible_labelled_plans": 20154,
+      "status": "passed"
+    }
+  ],
+  "icc_identical_and_systematic_shift_checks": "passed",
+  "collector_parsing_checks": "passed",
+  "scope": "Direct optima and full ceiling oracle checked against unfiltered labelled tours; no human reliability result is inferred"
+}

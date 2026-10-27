@@ -1,0 +1,2084 @@
+{
+  "protocol": {
+    "source_sha256": "f96a144e8ab9e8eb53dd59bf691c40929b4bbbb1e1bc5a74b63d9da26127b42c",
+    "sampling": "All eight released Amazon scaffolds, first seven canonical task indices; no outcome-based selection",
+    "domain": "All directed routes; all unlabelled partitions into at most three cells; every modal route duration <= L",
+    "horizon": "L=1.2 times the exact minimum modal bottleneck, before endpoint objectives",
+    "scale": "Exact minimum modal workload on the common modal-feasible domain",
+    "grids": {
+      "two": [
+        0.0,
+        0.15,
+        0.3,
+        0.5
+      ],
+      "four": [
+        0.0,
+        0.05,
+        0.15,
+        0.3,
+        0.4,
+        0.5
+      ]
+    },
+    "interior_endpoint_formula": "q_e(rho)=b_e+(c_e-b_e)*(1-2*rho)^gamma_e; travel gamma=(.5,1,2,3)[(3i+5j)%4], service gamma=(.5,1,2,3)[(3i+1)%4]",
+    "common_support": "Every completion has the same original lower support a, mode b and upper support c; the common left branch is linear from (a,0) to (b,1). Only the right branch is used on modal-feasible routes.",
+    "uncertainty": "Constructed stress scenarios; only modal inputs are operational; no new human data or uncertainty calibration",
+    "triangular_baseline": "Linear interpolation from b,c, without fitting interior endpoints; deliberate representation convention",
+    "hidden_test_completions": {
+      "powers": [
+        0.45,
+        1.0,
+        2.2
+      ],
+      "formula": "Between each pair of adjacent full-grid endpoints use q_lo-(q_lo-q_hi)*z^[p*(1+.12*(leg_id%3-1))]",
+      "separation": "All full-grid values are shared; interior interpolations are used only after optimization to evaluate every method against an exact oracle on the same domain"
+    },
+    "profiles": {
+      "arithmetic": [
+        0.5,
+        0.3333333333333333,
+        0.16666666666666666
+      ],
+      "top_heavy": [
+        0.7,
+        0.2,
+        0.1
+      ]
+    },
+    "alphas": [
+      0.1,
+      0.3,
+      0.7
+    ],
+    "cap": 0.3,
+    "cap_policy": "Apply the same endpoint-certified worst-cell cap to triangular, minimax and exact-sweep methods within each grid; retain infeasibility",
+    "regret": "Test objective minus exact test optimum on the identical grid/policy feasible set; cap cost separately versus uncapped",
+    "sweep": "Every attainable upper-risk ceiling, exact minimum workload, then minimum upper OWA",
+    "inference": "Descriptive eight-route experiment; repeated alpha/grid/weight/completions are not independent samples",
+    "tolerance": 1e-09,
+    "python": "3.10.10",
+    "platform": "macOS-15.7.2-arm64-arm-64bit",
+    "timing": "No time-limited or comparative timing experiment",
+    "code_sha256": {
+      "src/endpoint_decision_v11.py": "9d82d9285d2928c86b7dbd89c18bded41bebf43f544b3ecbcc82be2c1a9856ce",
+      "experiments/run_endpoint_decision_v11.py": "168a1712f624473fea87412dfaa42519ea43938a59f28aafafc2eb5889848d7c"
+    }
+  },
+  "aggregate": {
+    "two.uncapped.triangular": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 9.276771075067467,
+      "max_gap_pct": 40.212765957446784,
+      "positive_gaps": 35,
+      "mean_regret_pct": 5.84106941831497,
+      "max_regret_pct": 34.12202917012803,
+      "mean_regret": 0.019847033391920347,
+      "max_regret": 0.07103847532828428,
+      "mean_upper_worst": 0.3833333333333333,
+      "mean_test_worst": 0.31099138229257345,
+      "max_test_worst": 0.4971066136409261,
+      "mean_owa_width": 0.13027777777777777
+    },
+    "two.uncapped.minimax": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 0.0,
+      "max_gap_pct": 0.0,
+      "positive_gaps": 0,
+      "mean_regret_pct": 3.229596189967591,
+      "max_regret_pct": 34.293013653772974,
+      "mean_regret": 0.010931014482903465,
+      "max_regret": 0.06696760249009459,
+      "mean_upper_worst": 0.3052083333333333,
+      "mean_test_worst": 0.28385472547867335,
+      "max_test_worst": 0.49795205080332305,
+      "mean_owa_width": 0.12604166666666666
+    },
+    "two.uncapped.sweep": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 0.08193050631499128,
+      "max_gap_pct": 3.5289386373537956,
+      "positive_gaps": 3,
+      "mean_regret_pct": 2.850944670484017,
+      "max_regret_pct": 34.293013653772974,
+      "mean_regret": 0.009425568425856757,
+      "max_regret": 0.06466837641176199,
+      "mean_upper_worst": 0.296875,
+      "mean_test_worst": 0.27381431084640295,
+      "max_test_worst": 0.4971066136409261,
+      "mean_owa_width": 0.128125
+    },
+    "two.capped.triangular": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 9.076936497107262,
+      "max_gap_pct": 40.212765957446784,
+      "positive_gaps": 39,
+      "mean_regret_pct": 6.1315223477902245,
+      "max_regret_pct": 34.12202917012803,
+      "mean_regret": 0.021547895087825685,
+      "max_regret": 0.07103847532828428,
+      "mean_upper_worst": 0.3,
+      "mean_test_worst": 0.24031956168003513,
+      "max_test_worst": 0.2959548416191611,
+      "mean_owa_width": 0.12614583333333332
+    },
+    "two.capped.minimax": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 0.0,
+      "max_gap_pct": 0.0,
+      "positive_gaps": 0,
+      "mean_regret_pct": 2.981816847898467,
+      "max_regret_pct": 34.293013653772974,
+      "mean_regret": 0.009994173355610654,
+      "max_regret": 0.06466837641176199,
+      "mean_upper_worst": 0.24062499999999998,
+      "mean_test_worst": 0.22373484610309444,
+      "max_test_worst": 0.29865884723500624,
+      "mean_owa_width": 0.12604166666666666
+    },
+    "two.capped.sweep": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 0.07351955494487074,
+      "max_gap_pct": 3.5289386373537956,
+      "positive_gaps": 1,
+      "mean_regret_pct": 2.854457124320643,
+      "max_regret_pct": 34.293013653772974,
+      "mean_regret": 0.009690430054491224,
+      "max_regret": 0.06466837641176199,
+      "mean_upper_worst": 0.24062499999999998,
+      "mean_test_worst": 0.2232852814490012,
+      "max_test_worst": 0.29865884723500624,
+      "mean_owa_width": 0.12708333333333333
+    },
+    "four.uncapped.triangular": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 8.75615723865072,
+      "max_gap_pct": 40.212765957446784,
+      "positive_gaps": 34,
+      "mean_regret_pct": 5.84106941831497,
+      "max_regret_pct": 34.12202917012803,
+      "mean_regret": 0.019847033391920347,
+      "max_regret": 0.07103847532828428,
+      "mean_upper_worst": 0.37083333333333335,
+      "mean_test_worst": 0.31099138229257345,
+      "max_test_worst": 0.4971066136409261,
+      "mean_owa_width": 0.0967361111111111
+    },
+    "four.uncapped.minimax": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 0.0,
+      "max_gap_pct": 0.0,
+      "positive_gaps": 0,
+      "mean_regret_pct": 3.0843980831552793,
+      "max_regret_pct": 34.293013653772974,
+      "mean_regret": 0.009933566113603614,
+      "max_regret": 0.06466837641176199,
+      "mean_upper_worst": 0.2989583333333333,
+      "mean_test_worst": 0.28147960908787384,
+      "max_test_worst": 0.4971066136409261,
+      "mean_owa_width": 0.08920138888888889
+    },
+    "four.uncapped.sweep": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 0.03937164804653689,
+      "max_gap_pct": 1.8898391062337705,
+      "positive_gaps": 1,
+      "mean_regret_pct": 3.0665710663397885,
+      "max_regret_pct": 34.293013653772974,
+      "mean_regret": 0.009893489267582368,
+      "max_regret": 0.06466837641176199,
+      "mean_upper_worst": 0.30104166666666665,
+      "mean_test_worst": 0.28323344746036316,
+      "max_test_worst": 0.4971066136409261,
+      "mean_owa_width": 0.08868055555555555
+    },
+    "four.capped.triangular": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 9.066352409801336,
+      "max_gap_pct": 40.212765957446784,
+      "positive_gaps": 39,
+      "mean_regret_pct": 6.1315223477902245,
+      "max_regret_pct": 34.12202917012803,
+      "mean_regret": 0.021547895087825685,
+      "max_regret": 0.07103847532828428,
+      "mean_upper_worst": 0.3,
+      "mean_test_worst": 0.24031956168003513,
+      "max_test_worst": 0.2959548416191611,
+      "mean_owa_width": 0.11635416666666666
+    },
+    "four.capped.minimax": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 0.0,
+      "max_gap_pct": 0.0,
+      "positive_gaps": 0,
+      "mean_regret_pct": 2.981816847898467,
+      "max_regret_pct": 34.293013653772974,
+      "mean_regret": 0.009994173355610654,
+      "max_regret": 0.06466837641176199,
+      "mean_upper_worst": 0.24062499999999998,
+      "mean_test_worst": 0.22373484610309444,
+      "max_test_worst": 0.29865884723500624,
+      "mean_owa_width": 0.10295138888888888
+    },
+    "four.capped.sweep": {
+      "valid": 48,
+      "total": 48,
+      "mean_gap_pct": 0.07351955494487074,
+      "max_gap_pct": 3.5289386373537956,
+      "positive_gaps": 1,
+      "mean_regret_pct": 2.854457124320643,
+      "max_regret_pct": 34.293013653772974,
+      "mean_regret": 0.009690430054491224,
+      "max_regret": 0.06466837641176199,
+      "mean_upper_worst": 0.24062499999999998,
+      "mean_test_worst": 0.2232852814490012,
+      "max_test_worst": 0.29865884723500624,
+      "mean_owa_width": 0.10364583333333334
+    }
+  },
+  "grid_changes": [
+    {
+      "id": "A1-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A1-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0001724957705364072,
+      "mean_test_regret_change": -0.007364083796517283,
+      "selected_plan_changed": true
+    },
+    {
+      "id": "A1-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.00040249013125159827,
+      "mean_test_regret_change": -0.0034845992852433633,
+      "selected_plan_changed": true
+    },
+    {
+      "id": "A1-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A1-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A1-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A1-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A1-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A1-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A1-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A1-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A1-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A2-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A2-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A2-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.013538586235692929,
+      "mean_test_regret_change": -0.008696391915360388,
+      "selected_plan_changed": true
+    },
+    {
+      "id": "A2-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A2-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A2-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A2-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A2-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A2-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.019538586235692934,
+      "mean_test_regret_change": -0.012759514187227353,
+      "selected_plan_changed": true
+    },
+    {
+      "id": "A2-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A2-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A2-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A3-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A4-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A5-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A6-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A7-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A7-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.01351306095110516,
+      "mean_test_regret_change": -0.0001661271215975626,
+      "selected_plan_changed": true
+    },
+    {
+      "id": "A7-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.014999999999999902,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A7-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A7-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A7-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A7-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A7-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A7-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.019530475552578586,
+      "mean_test_regret_change": -0.015406805420446886,
+      "selected_plan_changed": true
+    },
+    {
+      "id": "A7-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A7-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A7-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "arithmetic",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "arithmetic",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "top_heavy",
+      "policy": "uncapped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.1,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.3,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    },
+    {
+      "id": "A8-7",
+      "profile": "top_heavy",
+      "policy": "capped",
+      "alpha": 0.7,
+      "upper_improvement": 0.0,
+      "mean_test_regret_change": 0.0,
+      "selected_plan_changed": false
+    }
+  ],
+  "cap_costs": [
+    {
+      "id": "A1-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A1-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.1661501622814754,
+      "workload_cost_pct": 0.26301539413629005,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A1-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.23757550348431078,
+      "workload_cost_pct": 0.26301539413629005,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A1-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A1-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A1-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A1-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A1-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.2025253986054798,
+      "workload_cost_pct": 0.3206652144586819,
+      "uncapped_upper_max": 0.4,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A1-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.2896330969304417,
+      "workload_cost_pct": 0.3206652144586819,
+      "uncapped_upper_max": 0.4,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A1-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A1-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A1-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A2-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 22.258615392266655,
+      "workload_cost_pct": 34.168836272535216,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 19.584672406773596,
+      "workload_cost_pct": 34.168836272535216,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 24.349947678034333,
+      "workload_cost_pct": 33.88931101252479,
+      "uncapped_upper_max": 0.4,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A2-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 22.492734193263118,
+      "workload_cost_pct": 33.88931101252479,
+      "uncapped_upper_max": 0.4,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A3-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 7.62854271180724,
+      "workload_cost_pct": 69.79276381337355,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A3-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 36.71121925055174,
+      "workload_cost_pct": 69.79276381337355,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A3-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 61.10314150885354,
+      "workload_cost_pct": 69.79276381337355,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A3-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A3-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 24.2895947596552,
+      "workload_cost_pct": 69.79276381337355,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A3-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 56.58998095572856,
+      "workload_cost_pct": 69.79276381337355,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A3-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 7.62854271180724,
+      "workload_cost_pct": 69.79276381337355,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A3-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 36.71121925055174,
+      "workload_cost_pct": 69.79276381337355,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A3-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 61.10314150885354,
+      "workload_cost_pct": 69.79276381337355,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A3-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A3-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 24.2895947596552,
+      "workload_cost_pct": 69.79276381337355,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A3-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 56.58998095572856,
+      "workload_cost_pct": 69.79276381337355,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A4-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A4-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A5-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A5-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A5-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A5-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A5-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A5-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A5-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A5-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A5-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A5-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A5-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A5-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A6-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A6-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A6-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A6-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A6-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A6-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A6-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A6-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A6-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A6-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A6-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A6-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A7-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A7-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A7-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 2.132964587429509,
+      "workload_cost_pct": 4.5043536503683645,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A7-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A7-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A7-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A7-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A7-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 3.0711502161602677,
+      "workload_cost_pct": 4.5043536503683645,
+      "uncapped_upper_max": 0.4,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A7-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 4.148746783234025,
+      "workload_cost_pct": 4.5043536503683645,
+      "uncapped_upper_max": 0.4,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A7-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.15,
+      "capped_upper_max": 0.15
+    },
+    {
+      "id": "A7-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A7-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 2.4911320857880836,
+      "workload_cost_pct": 4.5043536503683645,
+      "uncapped_upper_max": 0.4,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 28.670502882933846,
+      "workload_cost_pct": 68.72829623131193,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "two",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 58.20620304763657,
+      "workload_cost_pct": 68.72829623131193,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 19.850438292465288,
+      "workload_cost_pct": 68.72829623131193,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "two",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 54.5463445489669,
+      "workload_cost_pct": 68.72829623131193,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.3,
+      "upper_cost_pct": 28.670502882933846,
+      "workload_cost_pct": 68.72829623131193,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "four",
+      "profile": "arithmetic",
+      "alpha": 0.7,
+      "upper_cost_pct": 58.20620304763657,
+      "workload_cost_pct": 68.72829623131193,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.1,
+      "upper_cost_pct": 0.0,
+      "workload_cost_pct": 0.0,
+      "uncapped_upper_max": 0.3,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.3,
+      "upper_cost_pct": 19.850438292465288,
+      "workload_cost_pct": 68.72829623131193,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    },
+    {
+      "id": "A8-7",
+      "grid": "four",
+      "profile": "top_heavy",
+      "alpha": 0.7,
+      "upper_cost_pct": 54.5463445489669,
+      "workload_cost_pct": 68.72829623131193,
+      "uncapped_upper_max": 0.5,
+      "capped_upper_max": 0.3
+    }
+  ],
+  "counts": {
+    "routes": 8,
+    "records": 576,
+    "test_evaluations": 1728,
+    "plans": 85373
+  }
+}

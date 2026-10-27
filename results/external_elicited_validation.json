@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "independent_of_model_solver_and_fuzzy_implementation": true,
+  "method_runs": 144,
+  "returned_plans_checked": 144,
+  "checks": 1154,
+  "failures": 0,
+  "errors": [],
+  "max_absolute_numeric_difference": 2.2737367544323206e-13,
+  "survey_sha256": "e0e3135e2af31718927b8d84fa19082fbf5b4fbc7b2b0bb2b4085f37fbd6afed",
+  "result_sha256": "baf6497e2b88e7fbdd64a8315f91d5cbb32db89f5a33993f9a79394651352a5c",
+  "scope": "Recorded final routes and declared memberships; not field calibration or an optimality certificate"
+}

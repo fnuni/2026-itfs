@@ -1,0 +1,492 @@
+{
+ "protocol": {
+  "source": "twenty-expert campaign, first session (R1)",
+  "cases": 40,
+  "family": "S10",
+  "ceiling": 0.3,
+  "exact": "All shortest-subset-tour two-route partitions",
+  "reference": "median representative duration of the complete-chain respondents, shared by joint and Cartesian rules"
+ },
+ "raw": [
+  {
+   "seed": 10,
+   "context": "s1+s3",
+   "min_shifts": {
+    "consensus": 133.17703405847314,
+    "joint": 164.71109998410088,
+    "cartesian": 175.0971275841009
+   },
+   "joint_price_pct": 23.678306209899745,
+   "cartesian_price_pct": 31.476968849765917,
+   "cartesian_over_joint_pct": 6.3056027195510955
+  },
+  {
+   "seed": 10,
+   "context": "s1+s4",
+   "min_shifts": {
+    "consensus": 135.07178233685153,
+    "joint": 173.19143535192288,
+    "cartesian": 182.6761206976144
+   },
+   "joint_price_pct": 28.22177390093652,
+   "cartesian_price_pct": 35.24373302637247,
+   "cartesian_over_joint_pct": 5.4764170794120215
+  },
+  {
+   "seed": 10,
+   "context": "s2+s3",
+   "min_shifts": {
+    "consensus": 130.59703259014393,
+    "joint": 147.15590037757266,
+    "cartesian": 153.24299749942983
+   },
+   "joint_price_pct": 12.679359905056842,
+   "cartesian_price_pct": 17.340336499341703,
+   "cartesian_over_joint_pct": 4.136495448866739
+  },
+  {
+   "seed": 10,
+   "context": "s2+s4",
+   "min_shifts": {
+    "consensus": 132.4917808685223,
+    "joint": 153.80440439672714,
+    "cartesian": 161.3969204875014
+   },
+   "joint_price_pct": 16.08599672258486,
+   "cartesian_price_pct": 21.816553018985374,
+   "cartesian_over_joint_pct": 4.936475077261071
+  },
+  {
+   "seed": 20,
+   "context": "s1+s3",
+   "min_shifts": {
+    "consensus": 142.80810251490445,
+    "joint": 174.70017320676476,
+    "cartesian": 186.88921240676476
+   },
+   "joint_price_pct": 22.332115706482302,
+   "cartesian_price_pct": 30.867373150105195,
+   "cartesian_over_joint_pct": 6.977119127165254
+  },
+  {
+   "seed": 20,
+   "context": "s1+s4",
+   "min_shifts": {
+    "consensus": 145.03177858517472,
+    "joint": 185.5829289885887,
+    "cartesian": 195.78391668784582
+   },
+   "joint_price_pct": 27.960182795109944,
+   "cartesian_price_pct": 34.993805218257876,
+   "cartesian_over_joint_pct": 5.4967273955916385
+  },
+  {
+   "seed": 20,
+   "context": "s2+s3",
+   "min_shifts": {
+    "consensus": 140.13962303159195,
+    "joint": 157.62806591775373,
+    "cartesian": 164.28562148929416
+   },
+   "joint_price_pct": 12.479299221619367,
+   "cartesian_price_pct": 17.22995819123827,
+   "cartesian_over_joint_pct": 4.2235851418834125
+  },
+  {
+   "seed": 20,
+   "context": "s2+s4",
+   "min_shifts": {
+    "consensus": 142.3632991018622,
+    "joint": 164.94448847307794,
+    "cartesian": 172.6635332016878
+   },
+   "joint_price_pct": 15.861664848788525,
+   "cartesian_price_pct": 21.2837397636771,
+   "cartesian_over_joint_pct": 4.679783362309653
+  },
+  {
+   "seed": 30,
+   "context": "s1+s3",
+   "min_shifts": {
+    "consensus": 137.64119699289432,
+    "joint": 168.15400186606112,
+    "cartesian": 180.02535706606113
+   },
+   "joint_price_pct": 22.168366404676078,
+   "cartesian_price_pct": 30.793222522872178,
+   "cartesian_over_joint_pct": 7.059811285048001
+  },
+  {
+   "seed": 30,
+   "context": "s1+s4",
+   "min_shifts": {
+    "consensus": 139.80691719829971,
+    "joint": 178.8527666960013,
+    "cartesian": 188.68823788768276
+   },
+   "joint_price_pct": 27.928410324876584,
+   "cartesian_price_pct": 34.96344935497764,
+   "cartesian_over_joint_pct": 5.499199913635633
+  },
+  {
+   "seed": 30,
+   "context": "s2+s3",
+   "min_shifts": {
+    "consensus": 135.08076640593632,
+    "joint": 151.90505308829728,
+    "cartesian": 158.3370038588875
+   },
+   "joint_price_pct": 12.454983140828247,
+   "cartesian_price_pct": 17.216542422525926,
+   "cartesian_over_joint_pct": 4.23419145039996
+  },
+  {
+   "seed": 30,
+   "context": "s2+s4",
+   "min_shifts": {
+    "consensus": 137.2464866113417,
+    "joint": 158.97869873456318,
+    "cartesian": 166.99988468050913
+   },
+   "joint_price_pct": 15.834439671132227,
+   "cartesian_price_pct": 21.67880490334437,
+   "cartesian_over_joint_pct": 5.0454469748418385
+  },
+  {
+   "seed": 40,
+   "context": "s1+s3",
+   "min_shifts": {
+    "consensus": 135.69059788019223,
+    "joint": 167.31960957267893,
+    "cartesian": 178.17536877267895
+   },
+   "joint_price_pct": 23.309656075370434,
+   "cartesian_price_pct": 31.3100329397904,
+   "cartesian_over_joint_pct": 6.488037611206954
+  },
+  {
+   "seed": 40,
+   "context": "s1+s4",
+   "min_shifts": {
+    "consensus": 137.671040436949,
+    "joint": 176.42553342809907,
+    "cartesian": 186.09713899970598
+   },
+   "joint_price_pct": 28.150069083627628,
+   "cartesian_price_pct": 35.175225239134654,
+   "cartesian_over_joint_pct": 5.4819760970418185
+  },
+  {
+   "seed": 40,
+   "context": "s2+s3",
+   "min_shifts": {
+    "consensus": 133.08742783072003,
+    "joint": 149.88911142786375,
+    "cartesian": 156.1249871771497
+   },
+   "joint_price_pct": 12.624546037898154,
+   "cartesian_price_pct": 17.310094365736937,
+   "cartesian_over_joint_pct": 4.160326050292884
+  },
+  {
+   "seed": 40,
+   "context": "s2+s4",
+   "min_shifts": {
+    "consensus": 135.06787038747677,
+    "joint": 156.7117849717443,
+    "cartesian": 164.0467574041767
+   },
+   "joint_price_pct": 16.02447312019979,
+   "cartesian_price_pct": 21.45505584234546,
+   "cartesian_over_joint_pct": 4.6805493497217965
+  },
+  {
+   "seed": 50,
+   "context": "s1+s3",
+   "min_shifts": {
+    "consensus": 141.7852950998947,
+    "joint": 174.52823047936238,
+    "cartesian": 186.50581867571685
+   },
+   "joint_price_pct": 23.093322446730923,
+   "cartesian_price_pct": 31.54101667899647,
+   "cartesian_over_joint_pct": 6.862837125808596
+  },
+  {
+   "seed": 50,
+   "context": "s1+s4",
+   "min_shifts": {
+    "consensus": 143.78249743232715,
+    "joint": 184.40004432139045,
+    "cartesian": 194.49462800544657
+   },
+   "joint_price_pct": 28.249298499061346,
+   "cartesian_price_pct": 35.27003041311594,
+   "cartesian_over_joint_pct": 5.474284846950628
+  },
+  {
+   "seed": 50,
+   "context": "s2+s3",
+   "min_shifts": {
+    "consensus": 139.02829482638654,
+    "joint": 156.68543850066604,
+    "cartesian": 163.15240459423592
+   },
+   "joint_price_pct": 12.700395769313788,
+   "cartesian_price_pct": 17.35194249341452,
+   "cartesian_over_joint_pct": 4.127356157312856
+  },
+  {
+   "seed": 50,
+   "context": "s2+s4",
+   "min_shifts": {
+    "consensus": 141.02549715881898,
+    "joint": 163.74416824828995,
+    "cartesian": 171.14121392396564
+   },
+   "joint_price_pct": 16.10961957034325,
+   "cartesian_price_pct": 21.354802763950676,
+   "cartesian_over_joint_pct": 4.517440684946616
+  },
+  {
+   "seed": 60,
+   "context": "s1+s3",
+   "min_shifts": {
+    "consensus": 148.86109737610403,
+    "joint": 182.26847866388238,
+    "cartesian": 194.5178470842814
+   },
+   "joint_price_pct": 22.441982409529835,
+   "cartesian_price_pct": 30.670706123322212,
+   "cartesian_over_joint_pct": 6.720508400680658
+  },
+  {
+   "seed": 60,
+   "context": "s1+s4",
+   "min_shifts": {
+    "consensus": 151.24356103015808,
+    "joint": 193.40411964249978,
+    "cartesian": 204.0477017004976
+   },
+   "joint_price_pct": 27.875936221797136,
+   "cartesian_price_pct": 34.91331486158962,
+   "cartesian_over_joint_pct": 5.503286112866723
+  },
+  {
+   "seed": 60,
+   "context": "s2+s3",
+   "min_shifts": {
+    "consensus": 146.11250404288495,
+    "joint": 164.25210203442344,
+    "cartesian": 171.2356447323081
+   },
+   "joint_price_pct": 12.414815631531727,
+   "cartesian_price_pct": 17.194381038086483,
+   "cartesian_over_joint_pct": 4.2517219636075465
+  },
+  {
+   "seed": 60,
+   "context": "s2+s4",
+   "min_shifts": {
+    "consensus": 148.494967696939,
+    "joint": 171.94155988906485,
+    "cartesian": 180.76549934852432
+   },
+   "joint_price_pct": 15.78948603832664,
+   "cartesian_price_pct": 21.73173418067993,
+   "cartesian_over_joint_pct": 5.131941029936327
+  },
+  {
+   "seed": 70,
+   "context": "s1+s3",
+   "min_shifts": {
+    "consensus": 140.21528082068534,
+    "joint": 169.36579966848427,
+    "cartesian": 182.4559543457729
+   },
+   "joint_price_pct": 20.78983023617671,
+   "cartesian_price_pct": 30.12558494184894,
+   "cartesian_over_joint_pct": 7.728924436285989
+  },
+  {
+   "seed": 70,
+   "context": "s1+s4",
+   "min_shifts": {
+    "consensus": 142.6278627558205,
+    "joint": 182.05419354956535,
+    "cartesian": 192.10628208631346
+   },
+   "joint_price_pct": 27.642797158955457,
+   "cartesian_price_pct": 34.69057053403388,
+   "cartesian_over_joint_pct": 5.521481456021138
+  },
+  {
+   "seed": 70,
+   "context": "s2+s3",
+   "min_shifts": {
+    "consensus": 137.71245849536928,
+    "joint": 154.5632748206092,
+    "cartesian": 161.25557700191916
+   },
+   "joint_price_pct": 12.236232298333816,
+   "cartesian_price_pct": 17.095852302529014,
+   "cartesian_over_joint_pct": 4.329813915418956
+  },
+  {
+   "seed": 70,
+   "context": "s2+s4",
+   "min_shifts": {
+    "consensus": 140.12504043050444,
+    "joint": 161.97041609381105,
+    "cartesian": 170.9059047424597
+   },
+   "joint_price_pct": 15.5899156897235,
+   "cartesian_price_pct": 21.966712171777147,
+   "cartesian_over_joint_pct": 5.516741182830165
+  },
+  {
+   "seed": 80,
+   "context": "s1+s3",
+   "min_shifts": {
+    "consensus": 149.6459865375146,
+    "joint": 189.03898178967532,
+    "cartesian": 198.54292498967533
+   },
+   "joint_price_pct": 26.324124130308913,
+   "cartesian_price_pct": 32.675075077875746,
+   "cartesian_over_joint_pct": 5.027504438515273
+  },
+  {
+   "seed": 80,
+   "context": "s1+s4",
+   "min_shifts": {
+    "consensus": 151.3798140131903,
+    "joint": 195.84586002751314,
+    "cartesian": 205.47823489237803
+   },
+   "joint_price_pct": 29.373827880676572,
+   "cartesian_price_pct": 35.73687894376323,
+   "cartesian_over_joint_pct": 4.918344898131477
+  },
+  {
+   "seed": 80,
+   "context": "s2+s3",
+   "min_shifts": {
+    "consensus": 146.54489382475953,
+    "joint": 165.70326371731647,
+    "cartesian": 172.27484554045574
+   },
+   "joint_price_pct": 13.073379353269576,
+   "cartesian_price_pct": 17.55772653973495,
+   "cartesian_over_joint_pct": 3.96587349923907
+  },
+  {
+   "seed": 80,
+   "context": "s2+s4",
+   "min_shifts": {
+    "consensus": 148.2787213004352,
+    "joint": 172.7885721999152,
+    "cartesian": 179.21015544315844
+   },
+   "joint_price_pct": 16.5295807008069,
+   "cartesian_price_pct": 20.860332400662852,
+   "cartesian_over_joint_pct": 3.7164397861992438
+  },
+  {
+   "seed": 90,
+   "context": "s1+s3",
+   "min_shifts": {
+    "consensus": 146.0981548054596,
+    "joint": 180.94882603908312,
+    "cartesian": 192.92477896378108
+   },
+   "joint_price_pct": 23.854285688980646,
+   "cartesian_price_pct": 32.05148225223966,
+   "cartesian_over_joint_pct": 6.61841979682769
+  },
+  {
+   "seed": 90,
+   "context": "s1+s4",
+   "min_shifts": {
+    "consensus": 148.45360714870282,
+    "joint": 190.03765312694335,
+    "cartesian": 200.40412543945675
+   },
+   "joint_price_pct": 28.011475623213844,
+   "cartesian_price_pct": 34.99444660763022,
+   "cartesian_over_joint_pct": 5.454957026641805
+  },
+  {
+   "seed": 90,
+   "context": "s2+s3",
+   "min_shifts": {
+    "consensus": 143.40937390907587,
+    "joint": 161.53083194497262,
+    "cartesian": 168.0640168206169
+   },
+   "joint_price_pct": 12.636174011460422,
+   "cartesian_price_pct": 17.191793143991084,
+   "cartesian_over_joint_pct": 4.044543569162018
+  },
+  {
+   "seed": 90,
+   "context": "s2+s4",
+   "min_shifts": {
+    "consensus": 145.7648262523191,
+    "joint": 168.75178186060646,
+    "cartesian": 177.475679428174
+   },
+   "joint_price_pct": 15.769891954933568,
+   "cartesian_price_pct": 21.75480463370729,
+   "cartesian_over_joint_pct": 5.169662489711491
+  },
+  {
+   "seed": 100,
+   "context": "s1+s3",
+   "min_shifts": {
+    "consensus": 135.52861506447465,
+    "joint": 166.633574682034,
+    "cartesian": 177.74246028203402
+   },
+   "joint_price_pct": 22.950842966086448,
+   "cartesian_price_pct": 31.147551531812745,
+   "cartesian_over_joint_pct": 6.666655037076241
+  },
+  {
+   "seed": 100,
+   "context": "s1+s4",
+   "min_shifts": {
+    "consensus": 137.55523608609627,
+    "joint": 176.18119696090528,
+    "cartesian": 185.8489443685205
+   },
+   "joint_price_pct": 28.08032756429053,
+   "cartesian_price_pct": 35.108593214290316,
+   "cartesian_over_joint_pct": 5.487388878258392
+  },
+  {
+   "seed": 100,
+   "context": "s2+s3",
+   "min_shifts": {
+    "consensus": 132.9533677872081,
+    "joint": 149.66722151123895,
+    "cartesian": 155.92860099224663
+   },
+   "joint_price_pct": 12.571215007341063,
+   "cartesian_price_pct": 17.280670348877813,
+   "cartesian_over_joint_pct": 4.183534255386379
+  },
+  {
+   "seed": 100,
+   "context": "s2+s4",
+   "min_shifts": {
+    "consensus": 134.97998880882972,
+    "joint": 156.52908129494935,
+    "cartesian": 164.03508507873312
+   },
+   "joint_price_pct": 15.964657188288346,
+   "cartesian_price_pct": 21.525484278305672,
+   "cartesian_over_joint_pct": 4.795277479230919
+  }
+ ]
+}

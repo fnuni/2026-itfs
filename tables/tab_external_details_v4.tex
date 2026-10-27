@@ -1,0 +1,45 @@
+\begin{table*}[t]
+\centering
+\caption{Public-data replay: feasibility and common evaluation metrics. The normalized workload uses the same historical-split reference for all methods. These scalarized searches impose no fixed cellwise credibility ceiling: a smaller $J_\alpha$ need not reduce the maximum cell risk.}
+\label{tab:external-v4-detail}
+\footnotesize
+\begin{tabular}{clcccccc}
+\toprule
+$\alpha$ & Method & Feasible & $J_\alpha$ & FFF & $W/W_0$ & Max risk & Mean time (s) \\
+\midrule
+0.1 & OR-sweep & 24/24 & 0.3820 & 0.3172 & 0.9647 & 0.3682 & 4.003 \\
+0.1 & CC-all & 24/24 & 0.3828 & 0.3144 & 0.9992 & 0.3466 & 4.000 \\
+0.1 & CC-modal & 24/24 & 0.3505 & 0.2800 & 0.9851 & 0.2929 & 4.000 \\
+0.1 & OR+CC & 24/24 & 0.3715 & 0.3030 & 0.9885 & 0.3319 & 4.000 \\
+0.3 & OR-sweep & 24/24 & 0.5105 & 0.3163 & 0.9638 & 0.3676 & 4.003 \\
+0.3 & CC-all & 24/24 & 0.5094 & 0.3022 & 0.9928 & 0.3394 & 4.000 \\
+0.3 & CC-modal & 24/24 & 0.4890 & 0.2805 & 0.9755 & 0.3104 & 4.000 \\
+0.3 & OR+CC & 24/24 & 0.4998 & 0.2931 & 0.9820 & 0.3390 & 4.000 \\
+0.7 & OR-sweep & 24/24 & 0.7572 & 0.3978 & 0.9112 & 0.4868 & 4.002 \\
+0.7 & CC-all & 24/24 & 0.7608 & 0.4584 & 0.8904 & 0.5386 & 4.000 \\
+0.7 & CC-modal & 24/24 & 0.7470 & 0.4854 & 0.8591 & 0.5658 & 4.000 \\
+0.7 & OR+CC & 24/24 & 0.7518 & 0.4375 & 0.8865 & 0.4977 & 4.000 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+\centering
+\caption{Frozen source routes and source-level mean $J_{0.3}$ across three repetitions. Directed transit asymmetry is the mean $|t_{ij}-t_{ji}|$ divided by mean $t_{ij}$ across distinct stop pairs; service CV uses published planned service totals. Shift length $L$ is a constructed scenario parameter.}
+\label{tab:external-v4-routes}
+\footnotesize
+\begin{tabular}{clrrrrrrr}
+\toprule
+Route & Station & Stops & $L$ (min) & Asymm. & Serv. CV & OR-sweep & CC-full & OR+CC \\
+\midrule
+A1 & DCH4 & 192 & 157.7 & 0.075 & 0.610 & 0.5094 & 0.5315 & 0.5046 \\
+A2 & DLA9 & 132 & 128.8 & 0.108 & 1.187 & 0.4795 & 0.5145 & 0.4853 \\
+A3 & DLA7 & 165 & 174.3 & 0.065 & 0.655 & 0.5459 & 0.5335 & 0.5278 \\
+A4 & DLA7 & 150 & 148.4 & 0.056 & 1.242 & 0.4847 & 0.4567 & 0.4570 \\
+A5 & DSE5 & 167 & 132.3 & 0.044 & 1.021 & 0.5110 & 0.5130 & 0.5081 \\
+A6 & DBO2 & 181 & 168.6 & 0.082 & 0.882 & 0.5132 & 0.4950 & 0.4913 \\
+A7 & DSE4 & 186 & 138.6 & 0.068 & 0.900 & 0.5392 & 0.5287 & 0.5280 \\
+A8 & DLA8 & 139 & 145.1 & 0.103 & 0.931 & 0.5015 & 0.5024 & 0.4964 \\
+\bottomrule
+\end{tabular}
+\end{table*}

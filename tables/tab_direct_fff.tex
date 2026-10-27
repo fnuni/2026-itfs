@@ -1,0 +1,17 @@
+\begin{table}[tb]
+\centering
+\caption{Direct $J_\alpha$ optima on 30 canonical scaled-copy instances and eight seven-stop directed Amazon restrictions. Relative gaps (\%) over three $\alpha$. The exact sweep solves every maximum-risk breakpoint optimally (90/24 comparisons); each direct-search rule uses 300 iterations and three seeds (270/72).}
+\label{tab:direct-fff}
+\scriptsize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Instances & Reference & Mean & Median & Max. & Opt. \\\midrule
+Scaled (30) & Exact sweep & 1.67 & 0.00 & 16.20 & 65/90\\
+Scaled (30) & CC-modal & 2.31 & 0.00 & 56.26 & 173/270\\
+Scaled (30) & CC-full & 2.00 & 0.00 & 36.98 & 171/270\\
+Directed (8) & Exact sweep & 0.33 & 0.00 & 7.00 & 20/24\\
+Directed (8) & CC-modal & 5.45 & 0.09 & 34.75 & 36/72\\
+Directed (8) & CC-full & 3.34 & 0.00 & 34.75 & 41/72\\
+\bottomrule
+\end{tabular}
+\end{table}

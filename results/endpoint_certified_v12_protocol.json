@@ -1,0 +1,21 @@
+{
+ "name": "Certified interpolation and neutral completions add-on v12",
+ "freeze_scope": "Recorded before executing the v12 evaluations, after inspecting the v11 results (including the PL advantage on the original smooth family); this is not preregistration.",
+ "original_record": "results/endpoint_decision_v11.json",
+ "information_record": "results/endpoint_information_v11.json",
+ "selection": "All eight original inputs, both grids, both policies, both weight profiles and all three alpha values; no outcome-based exclusions.",
+ "anchoring": "Triangular, minimax, sweep and piecewise-linear plans are the archived v11 selections; PL is recomputed and asserted identical.",
+ "certified_interpolation": "CI-tau: among eligible plans whose upper objective J+ is at most (1+tau) times the minimax value on the same grid and policy, choose the plan minimizing the PL objective; ties by workload, maximum upper risk and enumeration index. tau in {0, 0.01, 0.02, 0.05, 0.10}. tau=0 is minimax with a PL tie-break; tau large recovers PL.",
+ "taus": [0.0, 0.01, 0.02, 0.05, 0.10],
+ "neutral_family": "For every leg and every interval between adjacent full-grid endpoints, an independent exponent drawn log-uniformly on [0.1, 10] (symmetric around one on a log scale, same range as the v11 stress powers) defines q_lo-(q_lo-q_hi)*z**exponent. Every draw preserves all full-grid endpoints and is therefore an admissible completion for both grids. Thirty draws per input; numpy default_rng seed 20261027 plus input index.",
+ "neutral_draws": 30,
+ "neutral_seed": 20261027,
+ "neutral_exponent_range": [0.1, 10.0],
+ "evaluation": "Regret is the test objective minus the exact test optimum on the identical grid/policy feasible set, as in v11. Families are reported separately: original smooth (0.45, 1, 2.2), stress (0.1, 10), neutral (30 draws). The common least-favourable completion yields the robust gap, reported as a deterministic certificate.",
+ "primary_outputs": "Main table: Tri., MM, Sweep, PL, CI-0.02, CI-0.05 on the four-level uncapped and capped domains with robust gap, smooth regret and neutral regret; supplementary table for all tau, grids and policies; frontier figure.",
+ "limitations": [
+  "Constructed memberships and completion families are not calibrated operational uncertainty.",
+  "The neutral family is one choice of an uninformative distribution over admissible completions, not an empirical distribution.",
+  "Repeated settings are descriptive and not independent replications."
+ ]
+}

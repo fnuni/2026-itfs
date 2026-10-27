@@ -1,0 +1,37 @@
+{
+  "source": "Returned PDF forms of sessions R1 and R2 (20 anonymous experts)",
+  "forms": 40,
+  "experts": 20,
+  "source_bundle_sha256": "a59a6232d7b6eaffd544fd3b75a9fa7ab909cdef0c19d02b6cc26d938b2f6aa6",
+  "collection_range": [
+    "2026-09-15",
+    "2026-10-07"
+  ],
+  "scenario_rotations": {
+    "1234": 5,
+    "2341": 5,
+    "3412": 5,
+    "4123": 5
+  },
+  "numerical_anomalies": [
+    {
+      "code": "E04",
+      "session": "R1",
+      "item": "s4_q010",
+      "answer": "approximate value"
+    },
+    {
+      "code": "E10",
+      "session": "R2",
+      "item": "s3_q010",
+      "answer": "unknown"
+    },
+    {
+      "code": "E18",
+      "session": "R2",
+      "item": "s2",
+      "answer": "nonmonotone thresholds 26/26/34/28/36"
+    }
+  ],
+  "imputation": "none"
+}

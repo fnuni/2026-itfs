@@ -1,0 +1,93 @@
+{
+ "status": "passed",
+ "checks": {
+  "sharp_endpoint_bounds": {
+   "passed": true,
+   "trials": 12000,
+   "failures": 0
+  },
+  "complete_membership_admissibility_and_events": {
+   "passed": true,
+   "memberships": 1920,
+   "event_checks": 11856,
+   "endpoint_equalities": 1496,
+   "failures": 0,
+   "lower_core_regression": "q(1/2)=5 and Cr(X>3)=1",
+   "fixed_horizon_tail_regression": "bounded tail fails beyond its chosen domain as expected"
+  },
+  "invalid_inputs": {
+   "passed": true,
+   "rejected": 12,
+   "cases": 12
+  },
+  "count_representation": {
+   "passed": true,
+   "trials": 5000,
+   "max_abs_error": 2.220446049250313e-16
+  },
+  "sweep_gap_sharp": {
+   "passed": true,
+   "cases": 60,
+   "min_gap_over_bound": 0.9998500000000021,
+   "alpha0_ratio_vs_bound": [
+    [
+     2,
+     1.5,
+     1.5
+    ],
+    [
+     3,
+     2.0,
+     2.0
+    ],
+    [
+     4,
+     2.5,
+     2.5
+    ],
+    [
+     6,
+     3.5,
+     3.5
+    ],
+    [
+     9,
+     5.0,
+     5.0
+    ]
+   ]
+  },
+  "regret_constant_sharp": {
+   "passed": true,
+   "delta": 0.15,
+   "max_shortfall": 1.000000000001e-06
+  },
+  "records:endpoint_minimax.json": {
+   "passed": true,
+   "comparisons": 600,
+   "violations": 0,
+   "enumeration_checked": 240,
+   "enumeration_mismatch": 0,
+   "optima_with_representative_overrun": 0,
+   "cases_without_certified_sweep_tiebreak": 0,
+   "losses_with_uncertified_sweep_tiebreak": 0
+  },
+  "records:endpoint_minimax_optimistic.json": {
+   "passed": true,
+   "comparisons": 600,
+   "violations": 0,
+   "enumeration_checked": 240,
+   "enumeration_mismatch": 0,
+   "optima_with_representative_overrun": 178,
+   "cases_without_certified_sweep_tiebreak": 52,
+   "losses_with_uncertified_sweep_tiebreak": 109
+  },
+  "secondary_solver_status_provenance": {
+   "passed": true,
+   "cases": 4,
+   "actual_status_preserved": true,
+   "fallback_plan_preserved": true,
+   "elapsed_time_checked": true
+  }
+ }
+}

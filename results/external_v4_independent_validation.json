@@ -1,0 +1,33 @@
+{
+  "status": "passed",
+  "independent_of_model_solver_and_fuzzy_implementation": true,
+  "inputs": "Derived public modal matrices, declared scenario spreads, saved complete plans",
+  "final_plans_checked": 288,
+  "final_plans_by_method": {
+    "OR-sweep": 72,
+    "CC-all": 72,
+    "CC-modal": 72,
+    "OR+CC": 72
+  },
+  "OR_stage_plans_checked": 432,
+  "numeric_checks": 7776,
+  "absolute_tolerance": 1e-09,
+  "max_absolute_numeric_difference": 3.410605131648481e-13,
+  "max_absolute_final_plan_numeric_difference": 3.410605131648481e-13,
+  "failures": 0,
+  "errors": [],
+  "assertions": [
+    "complete_task_coverage",
+    "K_by_P_shape",
+    "modal_workload",
+    "Pos_Nec_credibility",
+    "FFF_cell_OWA",
+    "worst_cell_credibility",
+    "optimistic_feasibility",
+    "recorded_ceiling_status",
+    "J_alpha"
+  ],
+  "data_sha256": "f96a144e8ab9e8eb53dd59bf691c40929b4bbbb1e1bc5a74b63d9da26127b42c",
+  "results_sha256": "3cbc1aa791cff525ab3926cf6016da83a7553e674024117018f753c0f108e67a",
+  "validator_sha256": "482bb1b39b1084c0c9f9b5573042a15c0dc0536944bb8742e9672b6cdf6a0125"
+}

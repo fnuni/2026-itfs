@@ -1,0 +1,64 @@
+{
+  "status": "PASS",
+  "source_sha256": "46ff4462331623575e665e1d93eab11cb305890eb4236623ef070414fbf8dd16",
+  "independent_unfiltered_plans": 32760,
+  "checks": [
+    {
+      "id": "A1-7",
+      "independent_test_audits": 216,
+      "independently_audited_routes": 12,
+      "feasible_plans": 12658,
+      "full_reproduction": true
+    },
+    {
+      "id": "A2-7",
+      "independent_test_audits": 216,
+      "independently_audited_routes": 11,
+      "feasible_plans": 5983,
+      "full_reproduction": true
+    },
+    {
+      "id": "A3-7",
+      "independent_test_audits": 216,
+      "independently_audited_routes": 11,
+      "feasible_plans": 18459,
+      "full_reproduction": true
+    },
+    {
+      "id": "A4-7",
+      "independent_test_audits": 216,
+      "independently_audited_routes": 4,
+      "feasible_plans": 328,
+      "full_reproduction": true
+    },
+    {
+      "id": "A5-7",
+      "independent_test_audits": 216,
+      "independently_audited_routes": 7,
+      "feasible_plans": 12634,
+      "full_reproduction": true
+    },
+    {
+      "id": "A6-7",
+      "independent_test_audits": 216,
+      "independently_audited_routes": 15,
+      "feasible_plans": 12905,
+      "full_reproduction": true
+    },
+    {
+      "id": "A7-7",
+      "independent_test_audits": 216,
+      "independently_audited_routes": 11,
+      "feasible_plans": 7613,
+      "full_reproduction": true
+    },
+    {
+      "id": "A8-7",
+      "independent_test_audits": 216,
+      "independently_audited_routes": 4,
+      "feasible_plans": 14793,
+      "full_reproduction": true
+    }
+  ],
+  "limitations": "Numerical exhaustive certificates at the documented tolerance; constructed completions do not calibrate operational uncertainty"
+}

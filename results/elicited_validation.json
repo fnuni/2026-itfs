@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "independent_of_analysis_collector_and_model": true,
+  "survey_records": 20,
+  "session": "R1",
+  "recorded_plans_checked": 1144,
+  "checks": 8748,
+  "max_absolute_numeric_difference": 1.9326762412674725e-12,
+  "failures": 0,
+  "errors": [],
+  "data_sha256": "e0e3135e2af31718927b8d84fa19082fbf5b4fbc7b2b0bb2b4085f37fbd6afed",
+  "scope": "Independent transcription, descriptive arithmetic, coverage, workload and planning-duration feasibility; exact optimality is not independently recertified"
+}

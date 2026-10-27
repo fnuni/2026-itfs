@@ -1,0 +1,9 @@
+# Core; release-11 validation used numpy 1.26.4 and highspy 1.15.1.
+numpy>=1.26.4
+highspy>=1.15.1
+# Inherited routing-engine studies only.
+ortools>=9.10
+hygese>=0.1
+# Optional original-PDF import fallback if Poppler pdftotext is absent.
+pypdf>=4.0
+# SciPy 1.15.3 was present in the test environment but is not imported here.

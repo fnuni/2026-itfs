@@ -1,0 +1,52 @@
+{
+  "homothetic": {
+    "oracle_sweep": {
+      "n": 90,
+      "mean": 1.67078219356832,
+      "median": 0.0,
+      "maximum": 16.202231272457567,
+      "optima": 65
+    },
+    "CC-modal": {
+      "n": 270,
+      "mean": 2.307603383279138,
+      "median": 0.0,
+      "maximum": 56.26171635867543,
+      "optima": 173
+    },
+    "CC-full": {
+      "n": 270,
+      "mean": 1.9983869093226898,
+      "median": 0.0,
+      "maximum": 36.97739144174965,
+      "optima": 171
+    }
+  },
+  "heterogeneous": {
+    "oracle_sweep": {
+      "n": 24,
+      "mean": 0.3324916635718304,
+      "median": 0.0,
+      "maximum": 7.002516269431114,
+      "optima": 20
+    },
+    "CC-modal": {
+      "n": 72,
+      "mean": 5.446556377441853,
+      "median": 0.09117609264844839,
+      "maximum": 34.75271050231075,
+      "optima": 36
+    },
+    "CC-full": {
+      "n": 72,
+      "mean": 3.337511929164778,
+      "median": 0.0,
+      "maximum": 34.75271050231075,
+      "optima": 41
+    }
+  },
+  "panel_sha256": "e0e3135e2af31718927b8d84fa19082fbf5b4fbc7b2b0bb2b4085f37fbd6afed",
+  "endpoint_cases": 360,
+  "joint_cases": 40,
+  "human_data": "40 returned forms, 20 paired experts; R1 enters planning studies, R1/R2 agreement in reliability20.json"
+}

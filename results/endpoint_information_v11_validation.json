@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "source_sha256": "a880dc46b55ae402873cdb15937af15ee1fa386d9ac0da7c62e6ae41c9f01093",
+  "frozen_protocol_sha256": "2feacf0a1704144685ca93de17d7cd5e015f1e226c75917b96671b460a59afc1",
+  "original_record_sha256": "46ff4462331623575e665e1d93eab11cb305890eb4236623ef070414fbf8dd16",
+  "validator_sha256": "352e7b490b26fbbb130e2a6ad8f593bb4155451f453876697aa4ff204d3cdd7c",
+  "independent_unfiltered_plans": 32760,
+  "checks": [
+    {
+      "id": "A1-7",
+      "full_reproduction": true,
+      "feasible_plans": 12658,
+      "original_records_anchored": 72,
+      "selected_tests_audited": 480,
+      "oracle_tests_audited": 480,
+      "linear_selected_plans_audited": 24,
+      "endpoint_equalities_audited": 890,
+      "independently_audited_routes": 18,
+      "max_scalar_abs_error": 2.842170943040401e-14
+    },
+    {
+      "id": "A2-7",
+      "full_reproduction": true,
+      "feasible_plans": 5983,
+      "original_records_anchored": 72,
+      "selected_tests_audited": 480,
+      "oracle_tests_audited": 480,
+      "linear_selected_plans_audited": 24,
+      "endpoint_equalities_audited": 540,
+      "independently_audited_routes": 11,
+      "max_scalar_abs_error": 1.1102230246251565e-15
+    },
+    {
+      "id": "A3-7",
+      "full_reproduction": true,
+      "feasible_plans": 18459,
+      "original_records_anchored": 72,
+      "selected_tests_audited": 480,
+      "oracle_tests_audited": 480,
+      "linear_selected_plans_audited": 24,
+      "endpoint_equalities_audited": 690,
+      "independently_audited_routes": 14,
+      "max_scalar_abs_error": 5.684341886080802e-14
+    },
+    {
+      "id": "A4-7",
+      "full_reproduction": true,
+      "feasible_plans": 328,
+      "original_records_anchored": 72,
+      "selected_tests_audited": 480,
+      "oracle_tests_audited": 480,
+      "linear_selected_plans_audited": 24,
+      "endpoint_equalities_audited": 300,
+      "independently_audited_routes": 6,
+      "max_scalar_abs_error": 1.4432899320127035e-15
+    },
+    {
+      "id": "A5-7",
+      "full_reproduction": true,
+      "feasible_plans": 12634,
+      "original_records_anchored": 72,
+      "selected_tests_audited": 480,
+      "oracle_tests_audited": 480,
+      "linear_selected_plans_audited": 24,
+      "endpoint_equalities_audited": 490,
+      "independently_audited_routes": 10,
+      "max_scalar_abs_error": 2.842170943040401e-14
+    },
+    {
+      "id": "A6-7",
+      "full_reproduction": true,
+      "feasible_plans": 12905,
+      "original_records_anchored": 72,
+      "selected_tests_audited": 480,
+      "oracle_tests_audited": 480,
+      "linear_selected_plans_audited": 24,
+      "endpoint_equalities_audited": 990,
+      "independently_audited_routes": 20,
+      "max_scalar_abs_error": 2.842170943040401e-14
+    },
+    {
+      "id": "A7-7",
+      "full_reproduction": true,
+      "feasible_plans": 7613,
+      "original_records_anchored": 72,
+      "selected_tests_audited": 480,
+      "oracle_tests_audited": 480,
+      "linear_selected_plans_audited": 24,
+      "endpoint_equalities_audited": 690,
+      "independently_audited_routes": 14,
+      "max_scalar_abs_error": 2.842170943040401e-14
+    },
+    {
+      "id": "A8-7",
+      "full_reproduction": true,
+      "feasible_plans": 14793,
+      "original_records_anchored": 72,
+      "selected_tests_audited": 480,
+      "oracle_tests_audited": 480,
+      "linear_selected_plans_audited": 24,
+      "endpoint_equalities_audited": 290,
+      "independently_audited_routes": 6,
+      "max_scalar_abs_error": 2.842170943040401e-14
+    }
+  ],
+  "limitations": "Numerical exhaustive validation, not exact arithmetic or operational calibration; common-adversary values are deterministic certificates."
+}

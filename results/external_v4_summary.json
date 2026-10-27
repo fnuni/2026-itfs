@@ -1,0 +1,790 @@
+{
+  "summary": [
+    {
+      "alpha": 0.1,
+      "method": "OR-sweep",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.38197741174382893,
+      "median_J": 0.38156240050313206,
+      "mean_FFF": 0.31723526265453367,
+      "median_FFF": 0.3166656928491063,
+      "mean_normalized_workload": 0.964656753547486,
+      "median_normalized_workload": 0.9699311512573291,
+      "mean_max_risk": 0.368211423252061,
+      "mean_wall_clock_s": 4.002915723208541,
+      "min_wall_clock_s": 4.001005789999908,
+      "max_wall_clock_s": 4.010095214998728
+    },
+    {
+      "alpha": 0.1,
+      "method": "CC-all",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.3828496534508235,
+      "median_J": 0.3892050291890455,
+      "mean_FFF": 0.3143638340644293,
+      "median_FFF": 0.32113645871611585,
+      "mean_normalized_workload": 0.9992220279283708,
+      "median_normalized_workload": 1.0008288025150507,
+      "mean_max_risk": 0.3465874176175109,
+      "mean_wall_clock_s": 4.000044216500025,
+      "min_wall_clock_s": 4.000028638000003,
+      "max_wall_clock_s": 4.000095986000815
+    },
+    {
+      "alpha": 0.1,
+      "method": "CC-modal",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.3505417911899406,
+      "median_J": 0.35933209886757256,
+      "mean_FFF": 0.2800406807736907,
+      "median_FFF": 0.28897179360732084,
+      "mean_normalized_workload": 0.9850517849361896,
+      "median_normalized_workload": 0.9895948992757981,
+      "mean_max_risk": 0.2929110827065988,
+      "mean_wall_clock_s": 4.00011100712489,
+      "min_wall_clock_s": 4.000024840999686,
+      "max_wall_clock_s": 4.00125690799905
+    },
+    {
+      "alpha": 0.1,
+      "method": "OR+CC",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.3715152955658716,
+      "median_J": 0.36842276707631827,
+      "mean_FFF": 0.30295991891729973,
+      "median_FFF": 0.2996529813730541,
+      "mean_normalized_workload": 0.9885136854030183,
+      "median_normalized_workload": 0.9888563925311243,
+      "mean_max_risk": 0.33186099969794064,
+      "mean_wall_clock_s": 4.000043440041584,
+      "min_wall_clock_s": 4.000028767000913,
+      "max_wall_clock_s": 4.000063789999331
+    },
+    {
+      "alpha": 0.3,
+      "method": "OR-sweep",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.5105352956394648,
+      "median_J": 0.5075159671378352,
+      "mean_FFF": 0.31629946741910525,
+      "median_FFF": 0.31210387210100743,
+      "mean_normalized_workload": 0.9637522281536369,
+      "median_normalized_workload": 0.9663643942358405,
+      "mean_max_risk": 0.36764052584729034,
+      "mean_wall_clock_s": 4.002673030124773,
+      "min_wall_clock_s": 4.000586373998885,
+      "max_wall_clock_s": 4.0074233489995095
+    },
+    {
+      "alpha": 0.3,
+      "method": "CC-all",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.5093997984045119,
+      "median_J": 0.5126669819269474,
+      "mean_FFF": 0.30224851577248807,
+      "median_FFF": 0.306343441765955,
+      "mean_normalized_workload": 0.9927527912125674,
+      "median_normalized_workload": 0.9935510131492388,
+      "mean_max_risk": 0.33935099263814855,
+      "mean_wall_clock_s": 4.000042664499915,
+      "min_wall_clock_s": 4.000027199001124,
+      "max_wall_clock_s": 4.0001347820016235
+    },
+    {
+      "alpha": 0.3,
+      "method": "CC-modal",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.4889651344532265,
+      "median_J": 0.4868119120216138,
+      "mean_FFF": 0.28046077708477335,
+      "median_FFF": 0.2763240015949725,
+      "mean_normalized_workload": 0.9754753016462839,
+      "median_normalized_workload": 0.9785899629297647,
+      "mean_max_risk": 0.3104006451452921,
+      "mean_wall_clock_s": 4.0000651247082715,
+      "min_wall_clock_s": 4.0000272750003205,
+      "max_wall_clock_s": 4.000402411000323
+    },
+    {
+      "alpha": 0.3,
+      "method": "OR+CC",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.4997898867693629,
+      "median_J": 0.4982325324198368,
+      "mean_FFF": 0.29311062491566126,
+      "median_FFF": 0.2912929516182501,
+      "mean_normalized_workload": 0.9820414977613336,
+      "median_normalized_workload": 0.9827938794322695,
+      "mean_max_risk": 0.3390440621479399,
+      "mean_wall_clock_s": 4.00006307829176,
+      "min_wall_clock_s": 4.000031441999454,
+      "max_wall_clock_s": 4.000492388000566
+    },
+    {
+      "alpha": 0.7,
+      "method": "OR-sweep",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.7571608239022717,
+      "median_J": 0.7608099666620731,
+      "mean_FFF": 0.3977768644105303,
+      "median_FFF": 0.42267124170838566,
+      "mean_normalized_workload": 0.9111825208273037,
+      "median_normalized_workload": 0.9015449415027796,
+      "mean_max_risk": 0.48675786601401455,
+      "mean_wall_clock_s": 4.002064142291526,
+      "min_wall_clock_s": 4.000554506999833,
+      "max_wall_clock_s": 4.00431146200026
+    },
+    {
+      "alpha": 0.7,
+      "method": "CC-all",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.7608062918659856,
+      "median_J": 0.7605561842935945,
+      "mean_FFF": 0.4584455067923159,
+      "median_FFF": 0.43811693901760407,
+      "mean_normalized_workload": 0.8903894854689869,
+      "median_normalized_workload": 0.89726269247283,
+      "mean_max_risk": 0.5385640062063323,
+      "mean_wall_clock_s": 4.000113687333699,
+      "min_wall_clock_s": 4.000024121000024,
+      "max_wall_clock_s": 4.00137298700065
+    },
+    {
+      "alpha": 0.7,
+      "method": "CC-modal",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.7469787246500158,
+      "median_J": 0.7492238731228165,
+      "mean_FFF": 0.485368131124208,
+      "median_FFF": 0.4463757502433721,
+      "mean_normalized_workload": 0.8590975504467906,
+      "median_normalized_workload": 0.8807694639966788,
+      "mean_max_risk": 0.5658412648368593,
+      "mean_wall_clock_s": 4.000210941708474,
+      "min_wall_clock_s": 4.000026862000595,
+      "max_wall_clock_s": 4.0036519810000755
+    },
+    {
+      "alpha": 0.7,
+      "method": "OR+CC",
+      "feasible": 24,
+      "runs": 24,
+      "mean_J": 0.7518096344888758,
+      "median_J": 0.7531511869557117,
+      "mean_FFF": 0.43749184210062786,
+      "median_FFF": 0.4265905450369975,
+      "mean_normalized_workload": 0.886517259798125,
+      "median_normalized_workload": 0.8917088050260498,
+      "mean_max_risk": 0.4976598028314784,
+      "mean_wall_clock_s": 4.000041910541692,
+      "min_wall_clock_s": 4.00003014899994,
+      "max_wall_clock_s": 4.0000603339995
+    }
+  ],
+  "paired": [
+    {
+      "alpha": 0.1,
+      "method": "CC-all",
+      "reference": "OR-sweep",
+      "route_count": 8,
+      "mean_delta_percent": 0.3671495627958767,
+      "bootstrap_95_percentile": [
+        -5.088877065566383,
+        5.345760300981712
+      ],
+      "improved_routes": 3,
+      "worsened_routes": 5,
+      "per_route": [
+        {
+          "instance": "A1",
+          "reference_J": 0.3821007349339213,
+          "method_J": 0.4018389504054345,
+          "delta_percent": 5.165709894519464
+        },
+        {
+          "instance": "A2",
+          "reference_J": 0.3446737785143549,
+          "method_J": 0.38354293887444735,
+          "delta_percent": 11.277086562148694
+        },
+        {
+          "instance": "A3",
+          "reference_J": 0.4215366252387638,
+          "method_J": 0.4102150380467582,
+          "delta_percent": -2.6857896833028225
+        },
+        {
+          "instance": "A4",
+          "reference_J": 0.36085827453709546,
+          "method_J": 0.30905123637716425,
+          "delta_percent": -14.356616382536505
+        },
+        {
+          "instance": "A5",
+          "reference_J": 0.3799967378462997,
+          "method_J": 0.40833748268313663,
+          "delta_percent": 7.458154771923361
+        },
+        {
+          "instance": "A6",
+          "reference_J": 0.3881086254890826,
+          "method_J": 0.39358267572224315,
+          "delta_percent": 1.4104428177194785
+        },
+        {
+          "instance": "A7",
+          "reference_J": 0.4099108200458337,
+          "method_J": 0.3834868910652038,
+          "delta_percent": -6.446262867048822
+        },
+        {
+          "instance": "A8",
+          "reference_J": 0.36863369734527984,
+          "method_J": 0.3727420144322,
+          "delta_percent": 1.114471388944164
+        }
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "method": "CC-modal",
+      "reference": "OR-sweep",
+      "route_count": 8,
+      "mean_delta_percent": -8.145605183577443,
+      "bootstrap_95_percentile": [
+        -12.908699970248655,
+        -3.7956710134565568
+      ],
+      "improved_routes": 7,
+      "worsened_routes": 1,
+      "per_route": [
+        {
+          "instance": "A1",
+          "reference_J": 0.3821007349339213,
+          "method_J": 0.3662638015218823,
+          "delta_percent": -4.144701112594765
+        },
+        {
+          "instance": "A2",
+          "reference_J": 0.3446737785143549,
+          "method_J": 0.35164908176242565,
+          "delta_percent": 2.023740615876374
+        },
+        {
+          "instance": "A3",
+          "reference_J": 0.4215366252387638,
+          "method_J": 0.3761721628084338,
+          "delta_percent": -10.761689427255572
+        },
+        {
+          "instance": "A4",
+          "reference_J": 0.36085827453709546,
+          "method_J": 0.2810657443061237,
+          "delta_percent": -22.111874899731383
+        },
+        {
+          "instance": "A5",
+          "reference_J": 0.3799967378462997,
+          "method_J": 0.3679189736908074,
+          "delta_percent": -3.1783862735099375
+        },
+        {
+          "instance": "A6",
+          "reference_J": 0.3881086254890826,
+          "method_J": 0.35490034942730336,
+          "delta_percent": -8.556438553750558
+        },
+        {
+          "instance": "A7",
+          "reference_J": 0.4099108200458337,
+          "method_J": 0.3679946533205354,
+          "delta_percent": -10.225679507706456
+        },
+        {
+          "instance": "A8",
+          "reference_J": 0.36863369734527984,
+          "method_J": 0.3383695626820134,
+          "delta_percent": -8.20981230994724
+        }
+      ]
+    },
+    {
+      "alpha": 0.1,
+      "method": "OR+CC",
+      "reference": "OR-sweep",
+      "route_count": 8,
+      "mean_delta_percent": -2.6357317542360055,
+      "bootstrap_95_percentile": [
+        -4.2999798103682565,
+        -1.106637096619956
+      ],
+      "improved_routes": 7,
+      "worsened_routes": 1,
+      "per_route": [
+        {
+          "instance": "A1",
+          "reference_J": 0.3821007349339213,
+          "method_J": 0.373936213067715,
+          "delta_percent": -2.136745920579881
+        },
+        {
+          "instance": "A2",
+          "reference_J": 0.3446737785143549,
+          "method_J": 0.34746167217494056,
+          "delta_percent": 0.8088499428654894
+        },
+        {
+          "instance": "A3",
+          "reference_J": 0.4215366252387638,
+          "method_J": 0.39635278166445587,
+          "delta_percent": -5.974295486197306
+        },
+        {
+          "instance": "A4",
+          "reference_J": 0.36085827453709546,
+          "method_J": 0.35457560074402666,
+          "delta_percent": -1.741036367013651
+        },
+        {
+          "instance": "A5",
+          "reference_J": 0.3799967378462997,
+          "method_J": 0.370621123535344,
+          "delta_percent": -2.4672881046541946
+        },
+        {
+          "instance": "A6",
+          "reference_J": 0.3881086254890826,
+          "method_J": 0.36273513856341816,
+          "delta_percent": -6.537728166615608
+        },
+        {
+          "instance": "A7",
+          "reference_J": 0.4099108200458337,
+          "method_J": 0.4009033868777295,
+          "delta_percent": -2.1974128829039086
+        },
+        {
+          "instance": "A8",
+          "reference_J": 0.36863369734527984,
+          "method_J": 0.3655364478993431,
+          "delta_percent": -0.8401970487889839
+        }
+      ]
+    },
+    {
+      "alpha": 0.3,
+      "method": "CC-all",
+      "reference": "OR-sweep",
+      "route_count": 8,
+      "mean_delta_percent": -0.16653447685572617,
+      "bootstrap_95_percentile": [
+        -2.759672463628904,
+        2.712594257497096
+      ],
+      "improved_routes": 4,
+      "worsened_routes": 4,
+      "per_route": [
+        {
+          "instance": "A1",
+          "reference_J": 0.5094100199242926,
+          "method_J": 0.5314935899277852,
+          "delta_percent": 4.335126742653119
+        },
+        {
+          "instance": "A2",
+          "reference_J": 0.4795021127517438,
+          "method_J": 0.5144687909928609,
+          "delta_percent": 7.292288670106581
+        },
+        {
+          "instance": "A3",
+          "reference_J": 0.5458537653482085,
+          "method_J": 0.5335299591143523,
+          "delta_percent": -2.2577120496722523
+        },
+        {
+          "instance": "A4",
+          "reference_J": 0.48469387031374167,
+          "method_J": 0.45668306776137735,
+          "delta_percent": -5.779070928673591
+        },
+        {
+          "instance": "A5",
+          "reference_J": 0.51097765315583,
+          "method_J": 0.5129604872051279,
+          "delta_percent": 0.3880471165523151
+        },
+        {
+          "instance": "A6",
+          "reference_J": 0.5132073863847784,
+          "method_J": 0.49500736181494814,
+          "delta_percent": -3.546329427960476
+        },
+        {
+          "instance": "A7",
+          "reference_J": 0.539174816138385,
+          "method_J": 0.5286880752764949,
+          "delta_percent": -1.9449611791954744
+        },
+        {
+          "instance": "A8",
+          "reference_J": 0.5014627410987377,
+          "method_J": 0.5023670551431482,
+          "delta_percent": 0.18033524134396928
+        }
+      ]
+    },
+    {
+      "alpha": 0.3,
+      "method": "CC-modal",
+      "reference": "OR-sweep",
+      "route_count": 8,
+      "mean_delta_percent": -4.274222210397272,
+      "bootstrap_95_percentile": [
+        -7.598497925306834,
+        -1.2366039893706582
+      ],
+      "improved_routes": 5,
+      "worsened_routes": 3,
+      "per_route": [
+        {
+          "instance": "A1",
+          "reference_J": 0.5094100199242926,
+          "method_J": 0.49459377164532925,
+          "delta_percent": -2.9085113561694933
+        },
+        {
+          "instance": "A2",
+          "reference_J": 0.4795021127517438,
+          "method_J": 0.4820564632367679,
+          "delta_percent": 0.5327089114092272
+        },
+        {
+          "instance": "A3",
+          "reference_J": 0.5458537653482085,
+          "method_J": 0.5517474457342607,
+          "delta_percent": 1.079717821913811
+        },
+        {
+          "instance": "A4",
+          "reference_J": 0.48469387031374167,
+          "method_J": 0.4209804138528077,
+          "delta_percent": -13.145092266112696
+        },
+        {
+          "instance": "A5",
+          "reference_J": 0.51097765315583,
+          "method_J": 0.48397506275875163,
+          "delta_percent": -5.284495364975096
+        },
+        {
+          "instance": "A6",
+          "reference_J": 0.5132073863847784,
+          "method_J": 0.5145520240485637,
+          "delta_percent": 0.26200668569045044
+        },
+        {
+          "instance": "A7",
+          "reference_J": 0.539174816138385,
+          "method_J": 0.4969176328932021,
+          "delta_percent": -7.837380749314734
+        },
+        {
+          "instance": "A8",
+          "reference_J": 0.5014627410987377,
+          "method_J": 0.46689826145612895,
+          "delta_percent": -6.892731365619645
+        }
+      ]
+    },
+    {
+      "alpha": 0.3,
+      "method": "OR+CC",
+      "reference": "OR-sweep",
+      "route_count": 8,
+      "mean_delta_percent": -2.0881116251368024,
+      "bootstrap_95_percentile": [
+        -3.564492585396219,
+        -0.6801869946070087
+      ],
+      "improved_routes": 7,
+      "worsened_routes": 1,
+      "per_route": [
+        {
+          "instance": "A1",
+          "reference_J": 0.5094100199242926,
+          "method_J": 0.5045698112586302,
+          "delta_percent": -0.9501596899059254
+        },
+        {
+          "instance": "A2",
+          "reference_J": 0.4795021127517438,
+          "method_J": 0.48528881740353774,
+          "delta_percent": 1.2068152564720651
+        },
+        {
+          "instance": "A3",
+          "reference_J": 0.5458537653482085,
+          "method_J": 0.5277638003610289,
+          "delta_percent": -3.3140680042098385
+        },
+        {
+          "instance": "A4",
+          "reference_J": 0.48469387031374167,
+          "method_J": 0.45702283503842545,
+          "delta_percent": -5.70897157362539
+        },
+        {
+          "instance": "A5",
+          "reference_J": 0.51097765315583,
+          "method_J": 0.5080620851480772,
+          "delta_percent": -0.5705862066072954
+        },
+        {
+          "instance": "A6",
+          "reference_J": 0.5132073863847784,
+          "method_J": 0.49129194517973485,
+          "delta_percent": -4.270289513840389
+        },
+        {
+          "instance": "A7",
+          "reference_J": 0.539174816138385,
+          "method_J": 0.5279618441807826,
+          "delta_percent": -2.079654246077486
+        },
+        {
+          "instance": "A8",
+          "reference_J": 0.5014627410987377,
+          "method_J": 0.49635795558468654,
+          "delta_percent": -1.017979023300159
+        }
+      ]
+    },
+    {
+      "alpha": 0.7,
+      "method": "CC-all",
+      "reference": "OR-sweep",
+      "route_count": 8,
+      "mean_delta_percent": 0.48022903150637136,
+      "bootstrap_95_percentile": [
+        -0.23190550104292376,
+        1.1764181674430465
+      ],
+      "improved_routes": 2,
+      "worsened_routes": 6,
+      "per_route": [
+        {
+          "instance": "A1",
+          "reference_J": 0.77232944725401,
+          "method_J": 0.7767529608215841,
+          "delta_percent": 0.5727495673383599
+        },
+        {
+          "instance": "A2",
+          "reference_J": 0.7491587812265217,
+          "method_J": 0.7549488891600391,
+          "delta_percent": 0.772881274118934
+        },
+        {
+          "instance": "A3",
+          "reference_J": 0.7661279591205717,
+          "method_J": 0.7586596685007955,
+          "delta_percent": -0.9748098252867612
+        },
+        {
+          "instance": "A4",
+          "reference_J": 0.7237438958709104,
+          "method_J": 0.7251969581587261,
+          "delta_percent": 0.2007702304787237
+        },
+        {
+          "instance": "A5",
+          "reference_J": 0.7549810883695562,
+          "method_J": 0.7691734400147838,
+          "delta_percent": 1.8798287617875484
+        },
+        {
+          "instance": "A6",
+          "reference_J": 0.7691376967414036,
+          "method_J": 0.7613510428531727,
+          "delta_percent": -1.0123874985221226
+        },
+        {
+          "instance": "A7",
+          "reference_J": 0.7831018894780069,
+          "method_J": 0.7973900223408806,
+          "delta_percent": 1.8245560449864116
+        },
+        {
+          "instance": "A8",
+          "reference_J": 0.7387058331571927,
+          "method_J": 0.7429773530779027,
+          "delta_percent": 0.5782436971498771
+        }
+      ]
+    },
+    {
+      "alpha": 0.7,
+      "method": "CC-modal",
+      "reference": "OR-sweep",
+      "route_count": 8,
+      "mean_delta_percent": -1.3301195790915776,
+      "bootstrap_95_percentile": [
+        -2.2350398904986046,
+        -0.48489564857569556
+      ],
+      "improved_routes": 6,
+      "worsened_routes": 2,
+      "per_route": [
+        {
+          "instance": "A1",
+          "reference_J": 0.77232944725401,
+          "method_J": 0.7605850029627642,
+          "delta_percent": -1.5206521430721989
+        },
+        {
+          "instance": "A2",
+          "reference_J": 0.7491587812265217,
+          "method_J": 0.7538090515856976,
+          "delta_percent": 0.6207322767494564
+        },
+        {
+          "instance": "A3",
+          "reference_J": 0.7661279591205717,
+          "method_J": 0.7517087788208128,
+          "delta_percent": -1.8820851175188227
+        },
+        {
+          "instance": "A4",
+          "reference_J": 0.7237438958709104,
+          "method_J": 0.7145283766974954,
+          "delta_percent": -1.2733121793484148
+        },
+        {
+          "instance": "A5",
+          "reference_J": 0.7549810883695562,
+          "method_J": 0.745973669744287,
+          "delta_percent": -1.1930654640265859
+        },
+        {
+          "instance": "A6",
+          "reference_J": 0.7691376967414036,
+          "method_J": 0.7394289193258018,
+          "delta_percent": -3.862608417383346
+        },
+        {
+          "instance": "A7",
+          "reference_J": 0.7831018894780069,
+          "method_J": 0.7705820907651042,
+          "delta_percent": -1.5987445415625277
+        },
+        {
+          "instance": "A8",
+          "reference_J": 0.7387058331571927,
+          "method_J": 0.7392139072981633,
+          "delta_percent": 0.06877895342981846
+        }
+      ]
+    },
+    {
+      "alpha": 0.7,
+      "method": "OR+CC",
+      "reference": "OR-sweep",
+      "route_count": 8,
+      "mean_delta_percent": -0.7048288002199679,
+      "bootstrap_95_percentile": [
+        -1.332954167024705,
+        -0.10246506788172921
+      ],
+      "improved_routes": 5,
+      "worsened_routes": 3,
+      "per_route": [
+        {
+          "instance": "A1",
+          "reference_J": 0.77232944725401,
+          "method_J": 0.769804364583365,
+          "delta_percent": -0.3269437258443062
+        },
+        {
+          "instance": "A2",
+          "reference_J": 0.7491587812265217,
+          "method_J": 0.7528101170239498,
+          "delta_percent": 0.48739144343341945
+        },
+        {
+          "instance": "A3",
+          "reference_J": 0.7661279591205717,
+          "method_J": 0.7662288123935388,
+          "delta_percent": 0.013164024594901597
+        },
+        {
+          "instance": "A4",
+          "reference_J": 0.7237438958709104,
+          "method_J": 0.7099081678284768,
+          "delta_percent": -1.9116883916215295
+        },
+        {
+          "instance": "A5",
+          "reference_J": 0.7549810883695562,
+          "method_J": 0.7508629200240444,
+          "delta_percent": -0.545466424120019
+        },
+        {
+          "instance": "A6",
+          "reference_J": 0.7691376967414036,
+          "method_J": 0.7562398194654544,
+          "delta_percent": -1.67692694436816
+        },
+        {
+          "instance": "A7",
+          "reference_J": 0.7831018894780069,
+          "method_J": 0.7691991957052055,
+          "delta_percent": -1.7753365123494382
+        },
+        {
+          "instance": "A8",
+          "reference_J": 0.7387058331571927,
+          "method_J": 0.7394236788869722,
+          "delta_percent": 0.09717612851538909
+        }
+      ]
+    }
+  ],
+  "hybrid_seed": [
+    {
+      "alpha": 0.1,
+      "seeded_runs": 24,
+      "improved_seed_runs": 20,
+      "mean_seed_improvement_percent": 5.093284924130355,
+      "note": "Within-hybrid seed has 2 s OR allowance; this is not a comparison with the separate 4 s OR-sweep method."
+    },
+    {
+      "alpha": 0.3,
+      "seeded_runs": 24,
+      "improved_seed_runs": 22,
+      "mean_seed_improvement_percent": 4.131132509837705,
+      "note": "Within-hybrid seed has 2 s OR allowance; this is not a comparison with the separate 4 s OR-sweep method."
+    },
+    {
+      "alpha": 0.7,
+      "seeded_runs": 24,
+      "improved_seed_runs": 24,
+      "mean_seed_improvement_percent": 2.385055668645853,
+      "note": "Within-hybrid seed has 2 s OR allowance; this is not a comparison with the separate 4 s OR-sweep method."
+    }
+  ],
+  "uncertainty": "95% percentile bootstrap of route-level mean percentage difference; 10,000 resamples, seed 20261010. n=8 source routes; three solver repetitions are averaged within route. Separate alpha scenarios are dependent. Intervals are exploratory: common-station/common-day correlations are not modeled and the sample is not representative.",
+  "limitations": "Small fixed public application sample; scenario TFNs and multi-shifts; short computational pilot. Direct scalarized global optima unknown."
+}

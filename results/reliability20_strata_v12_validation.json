@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "source_sha256": "9cbf19d8953d6b1f277977c01b124b17fb68c26379b250ef67ddc81d4e2f3150",
+  "strata_sha256": "f1ba050a013b54a9a8dd34e529809f120d8305a5eed8b46fd204bd29cac6a909",
+  "validator_sha256": "05bc6f4164141f0c120c2e7a4f60be7499f123f971f02493cea59726ebeb9233",
+  "groups": {
+    "all": {
+      "n": 20,
+      "departures": {
+        "q030": {
+          "exceed": 24,
+          "judgments": 80
+        },
+        "q010": {
+          "exceed": 30,
+          "judgments": 79
+        }
+      }
+    },
+    "operations": {
+      "n": 8,
+      "departures": {
+        "q030": {
+          "exceed": 10,
+          "judgments": 32
+        },
+        "q010": {
+          "exceed": 16,
+          "judgments": 31
+        }
+      }
+    },
+    "research_other": {
+      "n": 12,
+      "departures": {
+        "q030": {
+          "exceed": 14,
+          "judgments": 48
+        },
+        "q010": {
+          "exceed": 14,
+          "judgments": 48
+        }
+      }
+    },
+    "experience_2plus": {
+      "n": 13,
+      "departures": {
+        "q030": {
+          "exceed": 18,
+          "judgments": 52
+        },
+        "q010": {
+          "exceed": 23,
+          "judgments": 51
+        }
+      }
+    },
+    "experience_below_2": {
+      "n": 7,
+      "departures": {
+        "q030": {
+          "exceed": 6,
+          "judgments": 28
+        },
+        "q010": {
+          "exceed": 7,
+          "judgments": 28
+        }
+      }
+    }
+  },
+  "checks": "partition, residual counts, independent ICC(A,1) point values, published all-respondent values"
+}

@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+.DS_Store
+results_validation_smoke.json
+validation.log
+*.tmp

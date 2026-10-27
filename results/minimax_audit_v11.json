@@ -1,0 +1,1603 @@
+{
+  "source_sha256": {
+    "endpoint_minimax.json": "ecc0b4e012221e408e7fa391270edd0fdfdfbbaf2f164d48a7504cfd70679755",
+    "endpoint_minimax_optimistic.json": "9aab7a1d981aaaab64df923eb3bb6d67fec2be37169021634f7a33e8cafaca3c"
+  },
+  "selection": "All feasible ceilings must have optimal OWA tie-break status; retain or exclude all alpha comparisons of that configuration together.",
+  "geometry": {
+    "unique_coordinate_geometries": 30,
+    "family_seed_combinations": 50,
+    "coordinate_definition": "depot and ordered first n task coordinates, without duration scale or K/P",
+    "geometry_groups": {
+      "5583bbcd8703a7404dfd2c6626ec58ffcec765cbc1b2b34e2fbd3f28abc06366": [
+        {
+          "family": "S12",
+          "seed": 10
+        },
+        {
+          "family": "F12",
+          "seed": 10
+        }
+      ],
+      "48a0b0702ebcb0803c43ff556eb9b1b07ff94d507260e400ac724e934a87548c": [
+        {
+          "family": "S12",
+          "seed": 20
+        },
+        {
+          "family": "F12",
+          "seed": 20
+        }
+      ],
+      "a1528a0ccda9212a6a53fc3f2f355de6e3d71ed7dc161eacd061c780367addc3": [
+        {
+          "family": "S12",
+          "seed": 30
+        },
+        {
+          "family": "F12",
+          "seed": 30
+        }
+      ],
+      "3d883dfe21dade1785a11a5f59b7fd688bb9cfde8c190cb6c2ea1432686bc358": [
+        {
+          "family": "S12",
+          "seed": 40
+        },
+        {
+          "family": "F12",
+          "seed": 40
+        }
+      ],
+      "6d145e67ec578b0505643917e7f7ca76370a65cc3d230de6a4280d7ed6a8f47b": [
+        {
+          "family": "S12",
+          "seed": 50
+        },
+        {
+          "family": "F12",
+          "seed": 50
+        }
+      ],
+      "5ba2f1e897c1740b61037b48f75710ca2f4bfea4dbd286b58c4262f966029092": [
+        {
+          "family": "S12",
+          "seed": 60
+        },
+        {
+          "family": "F12",
+          "seed": 60
+        }
+      ],
+      "0cdbb75333d3e8c9573d30155f3d1ed8c3ca0f40eff1a813e3331d3b69b6bbeb": [
+        {
+          "family": "S12",
+          "seed": 70
+        },
+        {
+          "family": "F12",
+          "seed": 70
+        }
+      ],
+      "ff9b6c98c9568c58ca5e52f005a6048cfb2408dc010c5f5075a9ab42b02f3d9c": [
+        {
+          "family": "S12",
+          "seed": 80
+        },
+        {
+          "family": "F12",
+          "seed": 80
+        }
+      ],
+      "19aacf4f871177086cf991a620dd51fab970fc5ea66c596424960d4f37c37926": [
+        {
+          "family": "S12",
+          "seed": 90
+        },
+        {
+          "family": "F12",
+          "seed": 90
+        }
+      ],
+      "3b1186be64f8538a3edbcfa78b4c855e93fd7e936bbd22cbfee84606c1b9482c": [
+        {
+          "family": "S12",
+          "seed": 100
+        },
+        {
+          "family": "F12",
+          "seed": 100
+        }
+      ],
+      "f0bfd1ae3589c1d54e2ea89012f9c0a0cac057b66f58a26f84804c3b9b1dd7ed": [
+        {
+          "family": "F16",
+          "seed": 10
+        }
+      ],
+      "127a126570e1be8c2601cc9893b591914eefbe6b93d2a849d520048dbef6935c": [
+        {
+          "family": "F16",
+          "seed": 20
+        }
+      ],
+      "071a23f6d2451fc4c151fdd2d6d751d83b17c6391722c293c58809ce17ae279d": [
+        {
+          "family": "F16",
+          "seed": 30
+        }
+      ],
+      "dec8b314aeceadd72015bd6bf0dac238156aa141ebcd88bd9a733a0ce63690c5": [
+        {
+          "family": "F16",
+          "seed": 40
+        }
+      ],
+      "a6d4a3c8e64dfd7f61e159547e5edcf34c68f3431121734d49856333e9dc09fb": [
+        {
+          "family": "F16",
+          "seed": 50
+        }
+      ],
+      "dba5348da4b5ecdb5d7b709761285fd20c596cba08ca88d5e0343bb4e772533c": [
+        {
+          "family": "F16",
+          "seed": 60
+        }
+      ],
+      "3968ed265986731f6fcad9eac99ecb531c4bfab8c0f3e30984f838715e689f0b": [
+        {
+          "family": "F16",
+          "seed": 70
+        }
+      ],
+      "b957eb57ba498bb85b5d9c23bfb522ad2a70c7661b0cce11d2c1479d15807fb2": [
+        {
+          "family": "F16",
+          "seed": 80
+        }
+      ],
+      "d636b342142f231e1a90952b404903d968b47206739346001dc35aa193fc3623": [
+        {
+          "family": "F16",
+          "seed": 90
+        }
+      ],
+      "a8fdc8ef69b6feae5fa5e63e506b500402213f58e867e54689d8e8cd6c8621a8": [
+        {
+          "family": "F16",
+          "seed": 100
+        }
+      ],
+      "0e73d94d52f93bbae948910ec2b26c285b2e72b8782c3e24ca5e6e9d19e6944a": [
+        {
+          "family": "C18",
+          "seed": 10
+        },
+        {
+          "family": "C18w",
+          "seed": 10
+        }
+      ],
+      "bfb9d5f7571fb98e65dee9c9b38e9e1c7ad8e19a407238cefdc226276535ef0f": [
+        {
+          "family": "C18",
+          "seed": 20
+        },
+        {
+          "family": "C18w",
+          "seed": 20
+        }
+      ],
+      "955c35836b237539fe644bc94249d51f2044642799bb612d39f58982abac46c7": [
+        {
+          "family": "C18",
+          "seed": 30
+        },
+        {
+          "family": "C18w",
+          "seed": 30
+        }
+      ],
+      "140711841eb85f89dcc8271ca5a94dbd755e18a006c2b871a4a2014e1d2c5b4e": [
+        {
+          "family": "C18",
+          "seed": 40
+        },
+        {
+          "family": "C18w",
+          "seed": 40
+        }
+      ],
+      "ff3653dad65da60f9b19b016cebced0dda36ec47db19eadc0d5a4e4de951558f": [
+        {
+          "family": "C18",
+          "seed": 50
+        },
+        {
+          "family": "C18w",
+          "seed": 50
+        }
+      ],
+      "30446dc991974c7263ccd70df3e90930a88ce1f3c44969eb3976e5682f52ffcf": [
+        {
+          "family": "C18",
+          "seed": 60
+        },
+        {
+          "family": "C18w",
+          "seed": 60
+        }
+      ],
+      "2251052f03c48282ffb6449eb9624afbd35bb775307dc69b1b2cd8a4d4221eed": [
+        {
+          "family": "C18",
+          "seed": 70
+        },
+        {
+          "family": "C18w",
+          "seed": 70
+        }
+      ],
+      "0f42cf826c71cff184288a42ec175fc385418d5ed4bb51f16213eabf485e01b9": [
+        {
+          "family": "C18",
+          "seed": 80
+        },
+        {
+          "family": "C18w",
+          "seed": 80
+        }
+      ],
+      "98fcb1a455a2eaf641e3e639c2c85fbf5c629d716a231504e837281f8b739a9b": [
+        {
+          "family": "C18",
+          "seed": 90
+        },
+        {
+          "family": "C18w",
+          "seed": 90
+        }
+      ],
+      "963191067c7a7b55c8822a3b9f18c0dc0388b626c74db32fded8869d933bf86a": [
+        {
+          "family": "C18",
+          "seed": 100
+        },
+        {
+          "family": "C18w",
+          "seed": 100
+        }
+      ]
+    },
+    "interpretation": "Context, horizon and alpha reuse instances; S12/F12 and C18/C18w share coordinates. No independence claim or confidence interval is inferred."
+  },
+  "principal": {
+    "all": {
+      "configurations": 200,
+      "comparisons": 600,
+      "losses": 374,
+      "mean_gap_pct": 6.68650911496914,
+      "median_gap_pct": 1.935659514458421,
+      "max_gap_pct": 59.702073573466976,
+      "mean_gap_among_losses_pct": 10.727019970538727,
+      "max_absolute_gap": 0.13101314153777469,
+      "optimum_modal_overruns": 0
+    },
+    "by_alpha": {
+      "0.1": {
+        "configurations": 200,
+        "comparisons": 200,
+        "losses": 163,
+        "mean_gap_pct": 14.676216425461487,
+        "median_gap_pct": 10.56581009211981,
+        "max_gap_pct": 59.702073573466976,
+        "mean_gap_among_losses_pct": 18.007627515903664,
+        "max_absolute_gap": 0.13101314153777469,
+        "optimum_modal_overruns": 0
+      },
+      "0.3": {
+        "configurations": 200,
+        "comparisons": 200,
+        "losses": 162,
+        "mean_gap_pct": 5.125648019168306,
+        "median_gap_pct": 3.945244287613936,
+        "max_gap_pct": 20.77178114653353,
+        "mean_gap_among_losses_pct": 6.327960517491736,
+        "max_absolute_gap": 0.09221883054412583,
+        "optimum_modal_overruns": 0
+      },
+      "0.7": {
+        "configurations": 200,
+        "comparisons": 200,
+        "losses": 49,
+        "mean_gap_pct": 0.2576629002776277,
+        "median_gap_pct": 0.0,
+        "max_gap_pct": 3.8699481694695725,
+        "mean_gap_among_losses_pct": 1.0516853072556234,
+        "max_absolute_gap": 0.030307351779545022,
+        "optimum_modal_overruns": 0
+      }
+    }
+  },
+  "optimistic": {
+    "certified": {
+      "configurations": 148,
+      "comparisons": 444,
+      "losses": 287,
+      "mean_gap_pct": 5.993565924315135,
+      "median_gap_pct": 2.0496362483716557,
+      "max_gap_pct": 55.34613660995469,
+      "mean_gap_among_losses_pct": 9.272276203470105,
+      "max_absolute_gap": 0.12840320439371292,
+      "optimum_modal_overruns": 143
+    },
+    "exploratory": {
+      "configurations": 52,
+      "comparisons": 156,
+      "losses": 109,
+      "mean_gap_pct": 7.428312811809176,
+      "median_gap_pct": 2.4857075415032903,
+      "max_gap_pct": 54.0173821464254,
+      "mean_gap_among_losses_pct": 10.631346776534235,
+      "max_absolute_gap": 0.12096003785495152,
+      "optimum_modal_overruns": 35
+    },
+    "all_optima": {
+      "configurations": 200,
+      "comparisons": 600,
+      "losses": 396,
+      "mean_gap_pct": 6.366600115063585,
+      "median_gap_pct": 2.1266298752835255,
+      "max_gap_pct": 55.34613660995469,
+      "mean_gap_among_losses_pct": 9.646363810702402,
+      "max_absolute_gap": 0.12840320439371292,
+      "optimum_modal_overruns": 178
+    },
+    "certified_by_alpha": {
+      "0.1": {
+        "configurations": 148,
+        "comparisons": 148,
+        "losses": 117,
+        "mean_gap_pct": 12.932945419862675,
+        "median_gap_pct": 9.745118224515824,
+        "max_gap_pct": 55.34613660995469,
+        "mean_gap_among_losses_pct": 16.359623266151075,
+        "max_absolute_gap": 0.12840320439371292,
+        "optimum_modal_overruns": 2
+      },
+      "0.3": {
+        "configurations": 148,
+        "comparisons": 148,
+        "losses": 119,
+        "mean_gap_pct": 4.284635820464557,
+        "median_gap_pct": 3.516307848467004,
+        "max_gap_pct": 19.425115876028578,
+        "mean_gap_among_losses_pct": 5.328790768308862,
+        "max_absolute_gap": 0.09406574455931882,
+        "optimum_modal_overruns": 20
+      },
+      "0.7": {
+        "configurations": 148,
+        "comparisons": 148,
+        "losses": 51,
+        "mean_gap_pct": 0.7631165326181726,
+        "median_gap_pct": 0.0,
+        "max_gap_pct": 7.6084261236536,
+        "mean_gap_among_losses_pct": 2.2145342515194026,
+        "max_absolute_gap": 0.06434131621411077,
+        "optimum_modal_overruns": 121
+      }
+    },
+    "certified_ids": [
+      {
+        "family": "S12",
+        "seed": 10,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 10,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 10,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 10,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 20,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 20,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 20,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 20,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 30,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 30,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 30,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 30,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 40,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 40,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 40,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 40,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 50,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 50,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 50,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 50,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 60,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 60,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 60,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 60,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 70,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 70,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 70,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 70,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 80,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 80,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 80,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 80,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 90,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 90,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 90,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 90,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 100,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 100,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "S12",
+        "seed": 100,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "S12",
+        "seed": 100,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 10,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 10,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 10,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 10,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 20,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 20,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 20,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 20,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 30,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 30,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 30,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 30,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 40,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 40,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 40,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 40,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 50,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 50,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 50,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 50,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 60,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 60,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 60,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 60,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 70,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 70,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 70,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 70,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 80,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 80,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 80,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 80,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 90,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 90,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 90,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 90,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 100,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 100,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F12",
+        "seed": 100,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F12",
+        "seed": 100,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 40,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 40,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 70,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 70,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 80,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 80,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 10,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 20,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 20,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 30,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 30,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 30,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 30,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 40,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 40,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 40,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 40,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 50,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 50,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 50,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 50,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 70,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 70,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 80,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 80,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 90,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 90,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 90,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 100,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 100,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 10,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 10,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 10,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 10,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 20,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 20,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 20,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 20,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 30,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 30,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 30,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 30,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 40,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 40,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 40,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 40,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 50,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 50,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 50,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 50,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 60,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 60,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 70,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 70,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 70,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 70,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 80,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 80,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 80,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 80,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 90,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 90,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 90,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 90,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 100,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 100,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18w",
+        "seed": 100,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 100,
+        "context": "s2+s4",
+        "theta": 1.4
+      }
+    ],
+    "exploratory_ids": [
+      {
+        "family": "F16",
+        "seed": 10,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 10,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 10,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 10,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 20,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 20,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 20,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 20,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 30,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 30,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 30,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 30,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 40,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 40,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 50,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 50,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 50,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 50,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 60,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 60,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 60,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 60,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 70,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 70,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 80,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 80,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 90,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 90,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 90,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 90,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 100,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 100,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "F16",
+        "seed": 100,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "F16",
+        "seed": 100,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 10,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 10,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 10,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 20,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 20,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 60,
+        "context": "s1+s3",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 60,
+        "context": "s2+s4",
+        "theta": 1.2
+      },
+      {
+        "family": "C18",
+        "seed": 60,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 60,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 70,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 70,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 80,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 80,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 90,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 100,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18",
+        "seed": 100,
+        "context": "s2+s4",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 60,
+        "context": "s1+s3",
+        "theta": 1.4
+      },
+      {
+        "family": "C18w",
+        "seed": 60,
+        "context": "s2+s4",
+        "theta": 1.4
+      }
+    ],
+    "time_limited_ceiling_tiebreaks": 52,
+    "uncertified_ceiling_tiebreaks": 52,
+    "confirmed_secondary_time_limits": 0,
+    "legacy_fallbacks_without_secondary_status": 52,
+    "legacy_field_note": "time_limited_ceiling_tiebreaks counts the legacy fallback label. The legacy driver used that label for every nonoptimal secondary status; it does not prove that these were actual timeouts.",
+    "interpretation": "All direct minimax optima are certified. Only the retained subset has fully certified oracle sweep tie-breaks. Exploratory gaps can include tie-breaking search error. The certified subset is selected by computational tractability and is not a representative sample."
+  }
+}

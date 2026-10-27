@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "Anonymous review artifact, version 12.0.0. Cite the repository URL and this version; no DOI is assigned."
+type: software
+title: "Finite-Endpoint Credibility Models for Fleet Routing: Sharp Risk Bounds and Certified Ordered-Risk Decisions"
+version: 12.0.0
+date-released: 2026-10-27
+license: MIT
+repository-code: "https://github.com/fnuni/2026-itfs"
+url: "https://github.com/fnuni/2026-itfs/tree/v12.0.0"
+authors:
+  - name: "Anonymous manuscript authors"
+abstract: "Anonymous source code, canonical instances, pseudonymous numerical questionnaire answers and results for finite-endpoint credibility models and minimax OWA routing. Release 12.0.0 preserves all v11 records and adds certified interpolation, a neutral completion family and expert strata; release 11.0.1 added a piecewise-linear benchmark using the same endpoint information and two separately reported stress completions. Complete-membership validation and certified/exploratory sweep qualification are retained. Inherited questionnaire and solver studies are identified separately; original completed PDF forms are not included."
+keywords:
+  - fuzzy routing
+  - credibility theory
+  - ordered weighted averaging
+  - multi-shift routing
+  - workload equity
+  - reproducibility

@@ -1,0 +1,31 @@
+Generated synthetic instances, anonymous expert answers, experimental
+records, tables and package documentation are licensed under Creative Commons Attribution 4.0
+International (CC BY 4.0).
+
+Legal code: https://creativecommons.org/licenses/by/4.0/legalcode
+License summary: https://creativecommons.org/licenses/by/4.0/
+
+Attribution: The authors of the accompanying manuscript and this release.
+Software source is separately covered by the MIT License in LICENSE.
+This grant does not cover third-party works merely cited by the manuscript.
+
+EXCEPTION: The external Amazon route data and their derivatives are NOT
+covered by the CC BY 4.0 grant above. This exception includes
+data/amazon_v4/, results/external_extended*.json, results/direct_fff.json,
+the source-derived route tables tables/tab_external*.tex, and copies of these
+materials in the manuscript or supplement. The source material is copyright
+Amazon.com, Inc. or its affiliates and is supplied under Creative Commons
+Attribution-NonCommercial 4.0 International (CC BY-NC 4.0). The source license
+is retained verbatim in data/amazon_v4/raw/License.txt. Source attribution,
+URLs, access date and SHA-256 hashes are in data/amazon_v4/manifest.json.
+
+Dataset attribution: Daniel Merchán, Jatin Arora, Julian Pachon, Karthik
+Konduri, Matthias Winkenbach, Steven Parks and Joseph Noszek, "2021 Amazon
+Last Mile Routing Research Challenge: Data Set," Transportation Science,
+58(1), 8-11 (2024; first published online in 2022),
+https://doi.org/10.1287/trsc.2022.1173. Registry:
+https://registry.opendata.aws/amazon-last-mile-challenges/ .
+
+The new extraction, solver, experiment and verification software remains
+covered by the MIT software license in LICENSE; this does not relicense its
+third-party data inputs or their derivatives.
