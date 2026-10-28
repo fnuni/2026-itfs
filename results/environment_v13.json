@@ -1,0 +1,12 @@
+{
+  "python": "3.10.10",
+  "numpy": "1.26.4",
+  "platform": "macOS-15.7.2-arm64-arm-64bit",
+  "core_new_dependencies": [
+    "Python standard library",
+    "NumPy"
+  ],
+  "legacy_optional_dependencies": "requirements.txt retains inherited solver/import dependencies",
+  "source_precision": "Stored IEEE-754 inputs as dyadic rationals; intended rational profiles and grid",
+  "scope": "New exact-regret studies and validators; legacy solver environments remain in their archived records"
+}

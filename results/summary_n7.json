@@ -1,0 +1,153 @@
+{
+  "n": 7,
+  "settings": 96,
+  "cases": 8,
+  "slots": 3,
+  "grid": "four",
+  "domain": "All modal-feasible plans from all directed elementary routes of the first n tasks; same capped/uncapped eligible domain for every challenger and method",
+  "full_enumerated_plans_per_case": 32760,
+  "eligible_domain_min": 48,
+  "eligible_domain_max": 18459,
+  "complete_global_certificates": 96,
+  "total_dual_budget_candidates": 480,
+  "max_dual_budget_candidates": 12,
+  "case_processing_seconds": 7.337243124999986,
+  "decision_processing_seconds": 1.5430488710012469,
+  "pair_queries": 2187,
+  "primitive_pair_oracle_evaluations": 866,
+  "integer_maxflow_calls": 1059,
+  "upper_bound_pair_prunings": 1332022,
+  "MR_vs_CI": {
+    "strict_R_wins": 31,
+    "equal_R": 65,
+    "material_R_wins_1e9": 31,
+    "reporting_threshold": "1e-9 absolute J units (the existing v12 numeric tolerance); exact wins and material wins both reported",
+    "R_losses": 0,
+    "changed_plan": 37,
+    "positive_CI_regret_settings": 88,
+    "mean_relative_R_improvement_pct": 2.1752160287291207,
+    "max_relative_R_improvement_pct": 29.588446851532197,
+    "neutral_mean_wins": 1,
+    "neutral_mean_losses": 36,
+    "nominal_budget_violations": 0,
+    "robust_budget_violations": 0
+  },
+  "archived_baseline_decisions_audited": 288,
+  "archived_baseline_selections_changed": 0,
+  "maximum_nominal_horizon_score_change": 1.479348143984538e-10,
+  "methods": {
+    "CI_2pct": {
+      "decisions": 96,
+      "mean": {
+        "worst_regret": 0.057247334352382856,
+        "rectangular_regret_upper": 0.06339809741691053,
+        "rectangular_bound_tightening_pct": 15.371044902710906,
+        "neutral_mean_regret_pct": 2.2344209274489146,
+        "neutral_max_regret_pct": 6.647401010706928,
+        "smooth_mean_regret_pct": 0.573690044620501,
+        "robust_excess_pct": 0.22003980063932452,
+        "nominal_excess_vs_CI_pct": 0.0,
+        "universal_grid_regret_bound": 0.09612117301031094
+      },
+      "maximum": {
+        "worst_regret": 0.11596152751288111,
+        "rectangular_regret_upper": 0.11596152751288111,
+        "rectangular_bound_tightening_pct": 100.0,
+        "neutral_mean_regret_pct": 17.981213416290743,
+        "neutral_max_regret_pct": 29.850339802929618,
+        "smooth_mean_regret_pct": 11.094110258641502,
+        "robust_excess_pct": 1.9367295311016752,
+        "nominal_excess_vs_CI_pct": 0.0,
+        "universal_grid_regret_bound": 0.142395570611176
+      },
+      "rectangular_tightening_settings": 70,
+      "material_rectangular_tightening_settings_1e9": 70,
+      "zero_regret_settings": 8
+    },
+    "MM": {
+      "decisions": 96,
+      "mean": {
+        "worst_regret": 0.05580387984953955,
+        "rectangular_regret_upper": 0.0622769244065996,
+        "rectangular_bound_tightening_pct": 16.11740461568513,
+        "neutral_mean_regret_pct": 4.9110531415776215,
+        "neutral_max_regret_pct": 9.322127175973726,
+        "smooth_mean_regret_pct": 3.03310746534839,
+        "robust_excess_pct": 0.0,
+        "nominal_excess_vs_CI_pct": 2.3966449422411995,
+        "universal_grid_regret_bound": 0.09500000000000001
+      },
+      "maximum": {
+        "worst_regret": 0.1085659569017051,
+        "rectangular_regret_upper": 0.1085659569017051,
+        "rectangular_bound_tightening_pct": 100.0,
+        "neutral_mean_regret_pct": 29.555703843581675,
+        "neutral_max_regret_pct": 38.84242754468588,
+        "smooth_mean_regret_pct": 23.997167092248375,
+        "robust_excess_pct": 0.0,
+        "nominal_excess_vs_CI_pct": 22.32096176901599,
+        "universal_grid_regret_bound": 0.135
+      },
+      "rectangular_tightening_settings": 78,
+      "material_rectangular_tightening_settings_1e9": 78,
+      "zero_regret_settings": 8
+    },
+    "MR_CI_nominal_1pct": {
+      "decisions": 96,
+      "mean": {
+        "worst_regret": 0.0563751924554835,
+        "rectangular_regret_upper": 0.0628095895086431,
+        "rectangular_bound_tightening_pct": 16.107293803853146,
+        "neutral_mean_regret_pct": 2.413899526520949,
+        "neutral_max_regret_pct": 6.802877362076035,
+        "smooth_mean_regret_pct": 0.7340228713682112,
+        "robust_excess_pct": 0.13129889264271258,
+        "nominal_excess_vs_CI_pct": 0.15495360026265095,
+        "universal_grid_regret_bound": 0.0955326651020435
+      },
+      "maximum": {
+        "worst_regret": 0.11388489567024393,
+        "rectangular_regret_upper": 0.11388489567024393,
+        "rectangular_bound_tightening_pct": 100.0,
+        "neutral_mean_regret_pct": 17.981213416290743,
+        "neutral_max_regret_pct": 29.850339802929618,
+        "smooth_mean_regret_pct": 11.094110258641502,
+        "robust_excess_pct": 1.566890568734746,
+        "nominal_excess_vs_CI_pct": 0.9835061929138744,
+        "universal_grid_regret_bound": 0.14031893876853882
+      },
+      "rectangular_tightening_settings": 73,
+      "material_rectangular_tightening_settings_1e9": 73,
+      "zero_regret_settings": 8
+    },
+    "PL": {
+      "decisions": 96,
+      "mean": {
+        "worst_regret": 0.06142794499788123,
+        "rectangular_regret_upper": 0.06725496269623736,
+        "rectangular_bound_tightening_pct": 14.87116750774112,
+        "neutral_mean_regret_pct": 1.768723415399535,
+        "neutral_max_regret_pct": 6.398235821138472,
+        "smooth_mean_regret_pct": 0.1691716971554269,
+        "robust_excess_pct": 1.378524921642767,
+        "nominal_excess_vs_CI_pct": -0.39473536471700976,
+        "universal_grid_regret_bound": 0.09997803828963776
+      },
+      "maximum": {
+        "worst_regret": 0.14086639243929516,
+        "rectangular_regret_upper": 0.1429145577727803,
+        "rectangular_bound_tightening_pct": 100.0,
+        "neutral_mean_regret_pct": 7.7435810058231604,
+        "neutral_max_regret_pct": 23.26228723411393,
+        "smooth_mean_regret_pct": 2.279296358468566,
+        "robust_excess_pct": 18.484452419906017,
+        "nominal_excess_vs_CI_pct": 0.0,
+        "universal_grid_regret_bound": 0.18579649475329313
+      },
+      "rectangular_tightening_settings": 71,
+      "material_rectangular_tightening_settings_1e9": 71,
+      "zero_regret_settings": 8
+    }
+  },
+  "scope": "Exact finite-domain regret certificates on the explicitly documented dyadic numeric model; constructed memberships and completions, not field evidence; larger n concerns the stated elementary-route domain only"
+}

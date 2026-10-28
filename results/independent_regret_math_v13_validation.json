@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "Independent internal mathematical/numerical audit; not external verification or novelty certification.",
+  "random_seed": 130028,
+  "rational_mask_comparisons": 384,
+  "audited_implementation_mask_comparisons": 384,
+  "independent_sup_min_membership_constructions": 72,
+  "k_scaling_counterexample_verified": true,
+  "repeated_leg_rejection_checked": true,
+  "identical_and_empty_plan_checks_passed": true,
+  "tiny_positive_margin_fixture": "1/1180591620717411303424",
+  "numerics": "Fractions and arbitrary-precision integer flow; no floating-point tolerance in these checks.",
+  "elapsed_seconds": 2.1875419590001
+}

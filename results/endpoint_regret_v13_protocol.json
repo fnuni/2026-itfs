@@ -1,0 +1,64 @@
+{
+  "version": "13-analysis-1",
+  "date": "2026-10-28",
+  "status": "Frozen before seven-stop regret evaluation; developed after inspection of v12 and n3/n4 pilots, not preregistration",
+  "source_sha256": "f96a144e8ab9e8eb53dd59bf691c40929b4bbbb1e1bc5a74b63d9da26127b42c",
+  "archive_sha256": "c3c8bf33ac01da6c47cfac15d674e5606b63fd208d6c8244d2e3c3d6ba350b73",
+  "cases": "All eight released Amazon scaffolds, existing first-seven-stop domains",
+  "slots": 3,
+  "grid": "four",
+  "profiles": [
+    "arithmetic",
+    "top_heavy"
+  ],
+  "policies": [
+    "uncapped",
+    "capped"
+  ],
+  "alphas": [
+    0.1,
+    0.3,
+    0.7
+  ],
+  "robust_budget_tau": 0.02,
+  "nominal_budget_eta": 0.01,
+  "challenger_domain": "Same complete eligible domain as baseline decisions; no route-pool certificate",
+  "methods": [
+    "MM",
+    "PL",
+    "CI2",
+    "MR_dual_budget"
+  ],
+  "rational_input": "Treat stored IEEE-754 endpoint values and L as exact dyadic rationals; intended weights and levels as small-denominator rationals",
+  "rounding_audit": "Preserve the released numeric feasibility RHS Ldagger=float(L+TOL), TOL=1e-9 minute, as explicit horizon for all methods. Treat Ldagger and each endpoint as exact dyadic inputs; audit all route classes/domains against released v12 and record any differences. Re-evaluate nominal/test scoring at the same effective horizon.",
+  "safe_screening": "Upper bound on pair regret using endpoint intervals with conservative numerical buffer; exact circulation for remaining pairs",
+  "gate": {
+    "required": [
+      "Correct theorem with strong-cut realizability and exact strict-circulation reduction",
+      "All 96 seven-stop settings complete with full-domain certificates or explicitly bounded unresolved cases",
+      "Nontrivial decision or certificate benefit at equal robust/nominal budgets, with all losses reported",
+      "Closest random-set and regret-flow precedents explicitly credited"
+    ],
+    "not_required_to_claim": [
+      "PL mean superiority",
+      "New field observations",
+      "Large full-domain routing optima"
+    ]
+  },
+  "publication_condition": "Prepare new submission only if combined theoretical and computational evidence supports a stronger contribution; otherwise preserve v12 and report no-go",
+  "scope": "New theorem and regret certificates; do not claim probability calibration or field validation",
+  "protocol_amendment_before_seven_stop_results": "Exact feasibility audit detected one A1 modal boundary route differing by1.1e-15 minute under exact leg sums. Explicit Ldagger preserves existing v12 feasible domain instead of removing this route. Amendment fixed before seven-stop result evaluation.",
+  "staged_scaling_extension": {
+    "status": "Recorded after n7 results and n8 domain/candidate counts, before n8/n9 regret outcomes",
+    "n": [
+      8,
+      9
+    ],
+    "slots": 3,
+    "cases": "all eight scaffolds",
+    "settings": "same96 per dimension; four grid,2profiles,2policies,3alphas; tau2%,eta1%CI",
+    "resource_rule": "Run n8 full, then n9 if preprocessing fits available memory. Abort onlyfor resourcefailures; recordevery abort and reason. No outcome-based instancefiltering. No n10 factorial enumeration.",
+    "certification_rule": "Allcompleteeligibleplans mustbe valid challengers; numerical archives plus exactdyadicinput audit; samegateas n7.",
+    "reporting_rule": "Separate prior7 study and staged8/9 extension; n9cannotbe representedas operationalfieldscale, and inherited18 scaled-copy optima remain distinct."
+  }
+}
